@@ -1,20 +1,28 @@
 "use client";
 /** @jsxImportSource @emotion/react */
 
+import { useState } from "react";
+import BlogSpace from "./components/firstPageComponents/BlogSpace";
 import FirstPageCover from "./components/firstPageComponents/FirstPageCover";
 import ProfileSpace from "./components/firstPageComponents/ProfileSpace";
 import TypeItSpace from "./components/firstPageComponents/TypeItSpace";
-import {
-  flexColumnCenterX2,
-  widthHeightVhFull,
-} from "./styles/commonStyles/commonStyles";
+import { firstPageStyles } from "./styles/firstPageStyles/firstPageStyles";
+import { useFirstPageCoverStore } from "./stores/firstPageCoverStores/useFirstPageCoverStore";
 
 export default function Home() {
+  const [isProfileClicked, setIsProfileClicked] = useState(false);
+
+  const { isFirstLogin } = useFirstPageCoverStore();
+
   return (
-    <div css={[widthHeightVhFull, flexColumnCenterX2]}>
-      <FirstPageCover />
+    <div css={firstPageStyles.page(isProfileClicked)}>
+      {!isFirstLogin && <FirstPageCover />}
       <TypeItSpace />
-      <ProfileSpace />
+      <ProfileSpace
+        isProfileClicked={isProfileClicked}
+        setIsProfileClicked={setIsProfileClicked}
+      />
+      <BlogSpace />
     </div>
   );
 }

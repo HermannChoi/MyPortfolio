@@ -26,6 +26,7 @@ export const firstPageCoverStyle = (isSubmiited: boolean) => {
       top: 0;
       left: 0;
       animation: ${isSubmiited && fadeOut} 2s 5.5s forwards;
+      z-index: 1000;
     `,
   ];
 };

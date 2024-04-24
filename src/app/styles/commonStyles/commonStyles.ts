@@ -40,3 +40,9 @@ export const absoluteCenterX2 = css`
   left: 50%;
   transform: translate(-50%, -50%);
 `;
+
+export const whiteSpaceNoWrap = css`
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+`;

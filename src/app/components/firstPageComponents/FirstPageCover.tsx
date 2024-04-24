@@ -14,7 +14,7 @@ const FirstPageCover = () => {
   const [message, setMessage] = useState("입장 조건");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const { userName, setUserName } = useFirstPageCoverStore();
+  const { userName, setUserName, setIsFirstLogin } = useFirstPageCoverStore();
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -23,6 +23,9 @@ const FirstPageCover = () => {
     }
     setMessage("성공 ✓");
     setIsSubmitted(true);
+    setTimeout(() => {
+      setIsFirstLogin(true);
+    }, 7500);
   };
 
   return (

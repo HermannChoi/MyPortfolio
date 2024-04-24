@@ -1,5 +1,10 @@
 import { keyframes } from "@emotion/react";
 
+export const fadeIn = keyframes`
+from {opacity: 0;}
+to {opacity: 1;}
+`;
+
 export const fadeOut = keyframes`
 from {opacity:1;} 
 to {opacity:0; display:none;}
@@ -75,4 +80,9 @@ export const moveLeft = keyframes`
 
 export const moveRight = keyframes`
   to {right: 0;}
+`;
+
+export const showUp = keyframes`
+from {transform: translateY(-15px); opacity:0;}
+to {transform: translateY(0); opacity:1;}
 `;
