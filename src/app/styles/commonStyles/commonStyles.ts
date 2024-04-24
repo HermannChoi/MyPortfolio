@@ -27,3 +27,16 @@ export const flexColumnCenterX2 = css`
   justify-content: center;
   align-items: center;
 `;
+
+export const absoluteCenter = css`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+`;
+
+export const absoluteCenterX2 = css`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
