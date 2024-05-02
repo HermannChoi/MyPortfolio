@@ -39,7 +39,7 @@ const TodaysLuck = () => {
               플랫폼 : Web <br />
               개발 인원 : 3명 (Front-End 2명, Back-End 1명) <br />
               담당 역할 : Front-End (UI/UX Design 및 전체적인 페이지 구성,
-              애니메이션4)
+              애니메이션)
             </p>
             <p>
               오늘의 운세 서비스는 프로그래밍을 배운지 얼마 안 되었을 때 만든 팀

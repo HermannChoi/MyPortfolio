@@ -11,22 +11,25 @@ import Link from "next/link";
 const BlogSpace = () => {
   return (
     <div css={[blogStyles.whole]}>
-      <Link href={"https://github.com/HermannChoi"} css={blogStyles.container}>
+      <Link
+        href={"https://github.com/HermannChoi"}
+        css={blogStyles.container("GitHub")}
+      >
         <Image src={Github} alt="github" css={[blogStyles.image]} />
       </Link>
       <Link
         href={
           "https://www.notion.so/Hermann-Page-9072ccd604314ddba7fb0c620cc8bf2b"
         }
-        css={blogStyles.container}
+        css={blogStyles.container("Notion")}
       >
-        <Image src={Notion} alt="github" css={[blogStyles.image]} />
+        <Image src={Notion} alt="notion" css={[blogStyles.image]} />
       </Link>
       <Link
         href={"https://velog.io/@hiyunseok347/posts"}
-        css={blogStyles.container}
+        css={blogStyles.container("Velog")}
       >
-        <Image src={Velog} alt="github" css={[blogStyles.image]} />
+        <Image src={Velog} alt="velog" css={[blogStyles.image]} />
       </Link>
     </div>
   );

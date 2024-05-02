@@ -1,5 +1,9 @@
 import { css } from "@emotion/react";
-import { showUp2 } from "./keyframes";
+import { showUp2, widthHeightZeroTo40 } from "./keyframes";
+
+export const commonColors = {
+  representative: "#a2ffe3",
+};
 
 export const flexCenterX2 = css`
   display: flex;
@@ -53,6 +57,14 @@ export const delayShowUpAni = (delay: number) => {
     css`
       opacity: 0;
       animation: ${showUp2} 0.5s ${delay}s forwards;
+    `,
+  ];
+};
+
+export const delayShowUpAni2 = (delay: number) => {
+  return [
+    css`
+      animation: ${widthHeightZeroTo40} 0.5s ${delay}s forwards;
     `,
   ];
 };

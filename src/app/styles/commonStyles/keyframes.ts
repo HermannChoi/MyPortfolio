@@ -10,6 +10,11 @@ from {opacity: 0; transform: translateY(-20px)}
 to {opacity: 1;}
 `;
 
+export const fadeInForProjName = keyframes`
+from {opacity: 0; transform: translate(-50%,-20px)}
+to {opacity: 1; transform: translate(-50%,0px)}
+`;
+
 export const fadeOut = keyframes`
 from {opacity:1;} 
 to {opacity:0; display:none;}
@@ -109,6 +114,11 @@ export const leftToRight = keyframes`
 `;
 
 export const floating = keyframes`
-from {transform: translateY(0px);}
-to {transform: translateY(10px);}
+from {transform: translateY(0px); opacity: 1;}
+to {transform: translateY(10px); opacity: 0.5;}
+`;
+
+export const widthHeightZeroTo40 = keyframes`
+from {width: 0; height: 0;}
+to {width: 40px; height: 40px; overflow: visible;}
 `;

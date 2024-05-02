@@ -40,6 +40,7 @@ export const projectSection = {
       justify-content: center;
       row-gap: 20px;
       width: 100%;
+      padding-top: 20px;
     `,
   ],
 };

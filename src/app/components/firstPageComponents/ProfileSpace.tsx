@@ -28,12 +28,20 @@ const ProfileSpace: React.FC<ProfileSpace> = ({ setIsProfileClicked }) => {
   };
 
   return (
-    <button
-      onClick={() => handleClick()}
-      css={[firstPageStyles.imageContainer(isClicked)]}
-    >
-      <Image src={Profile} alt="프로필 이미지" css={firstPageStyles.image} />
-    </button>
+    <>
+      <button
+        onClick={() => handleClick()}
+        css={[firstPageStyles.imageContainer(isClicked)]}
+      >
+        <Image
+          src={Profile}
+          alt="프로필 이미지"
+          css={firstPageStyles.image(isClicked)}
+        />
+      </button>
+      <p css={firstPageStyles.arrow}>⬆</p>
+      <p css={[`color: gray;`]}>사진을 클릭해 보세요!</p>
+    </>
   );
 };
 

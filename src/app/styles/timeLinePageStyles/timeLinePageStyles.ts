@@ -1,18 +1,18 @@
 import { css } from "@emotion/react";
 import {
+  commonColors,
   flexCenterX2,
   flexColumnCenter,
   widthHeightFull,
 } from "../commonStyles/commonStyles";
 import {
   fadeIn2,
+  fadeInForProjName,
   floating,
-  leftToRight,
   widthZeroToFull,
 } from "../commonStyles/keyframes";
 
 export const timelinePageStyles = {
-  page: [flexColumnCenter, widthHeightFull],
   header: [
     [
       flexCenterX2,
@@ -20,8 +20,8 @@ export const timelinePageStyles = {
         position: sticky;
         top: 0px;
         width: 100%;
-        height: 70px;
-        background-color: #00000080;
+        height: 120px;
+        background-color: #00000090;
         z-index: 100;
       `,
     ],
@@ -37,6 +37,23 @@ export const timelinePageStyles = {
       `,
     ];
   },
+  backBtn: [
+    css`
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 60px;
+      height: 40px;
+      border: none;
+      background-color: transparent;
+      font-size: 2em;
+      transition: 0.3s;
+      &:hover {
+        left: 15px;
+        color: ${commonColors.representative};
+      }
+    `,
+  ],
   title: [
     css`
       animation: ${fadeIn2} 1s;
@@ -50,10 +67,24 @@ export const timelinePageStyles = {
         opacity: 0;
         transition: 0.5s;
         animation: ${fadeIn2} 1s 0.3s forwards,
-          ${floating} 1s 1.3s alternate infinite linear;
+          ${floating} 1.3s 1.3s alternate infinite linear;
       `,
     ];
   },
+  scrollBtn: [
+    css`
+      width: 100%;
+      height: 30px;
+      background-color: transparent;
+      border: 1px solid gray;
+      border-radius: 15px;
+      transition: 0.2s;
+      &:hover {
+        height: 35px;
+        border-color: ${commonColors.representative};
+      }
+    `,
+  ],
 };
 
 export const timelineStyles = {
@@ -64,38 +95,35 @@ export const timelineStyles = {
       justify-content: space-around;
       align-items: center;
       width: 100%;
-      height: 3px;
+      height: 5px;
       background-color: #ffffff;
       opacity: 0;
-      animation: ${widthZeroToFull} 0.7s 1s linear forwards;
+      animation: ${widthZeroToFull} 0.5s 0.6s linear forwards;
     `,
   ],
-  light: [
-    css`
-      position: absolute;
-      width: 20%;
-      height: 100%;
-      background-color: #a2ffe3;
-      animation: ${leftToRight} 2s infinite;
-    `,
-  ],
-  selectedOne: [
-    css`
-      border: 2px solid yellow !important;
-    `,
-  ],
+  selectedOne: (color: string) => {
+    return [
+      css`
+        transform: scale(1.2);
+        border-color: yellow !important;
+        background-color: ${color} !important;
+      `,
+    ];
+  },
   round: (color: string, name: string, date: string) => {
     return [
       css`
         position: relative;
-        width: 30px;
-        height: 30px;
-        border: 1px solid #ffffff;
+        width: 0px;
+        height: 0px;
+        border: 2px solid #ffffff;
         border-radius: 50%;
-        background-color: ${color};
+        background-color: gray;
+        overflow: hidden;
         transition: 0.2s;
         &:hover {
-          transform: scale(1.1);
+          transform: scale(1.2);
+          background-color: ${color};
         }
         &::before {
           content: "${date}";
@@ -109,17 +137,18 @@ export const timelineStyles = {
         &:hover::after {
           content: "${name}";
           position: absolute;
-          bottom: -200%;
+          bottom: -170%;
           left: 50%;
           transform: translateX(-50%);
           width: max-content;
           padding: 0px 20px;
           border: 1px solid ${color};
           border-radius: 10px;
-          background-color: #000000;
-          font-size: 1.3em;
+          background-color: #ffffffc7;
+          color: black;
+          font-size: 1.1em;
           font-weight: bold;
-          animation: ${fadeIn2} 0.5s;
+          animation: ${fadeInForProjName} 0.5s;
         }
       `,
     ];
