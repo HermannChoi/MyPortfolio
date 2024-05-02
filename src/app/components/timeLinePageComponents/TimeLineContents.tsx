@@ -3,10 +3,10 @@
 
 import { timelineStyles } from "@/app/styles/timeLinePageStyles/timeLinePageStyles";
 import { useTimeLineStore } from "@/app/stores/timeLinePageStores/useTimeLineStore";
-import { projectsInfo } from "@/app/constants/projectsInfo";
+import { projectsInfo } from "@/app/constants/timeLine/projectsInfo";
 
 const TimeLineContents = () => {
-  const { setOrder } = useTimeLineStore();
+  const { order, setOrder } = useTimeLineStore();
 
   return (
     <div css={[timelineStyles.line]}>
@@ -15,13 +15,13 @@ const TimeLineContents = () => {
         return (
           <button
             key={i}
-            onClick={() => setOrder(i)}
+            onClick={() => {
+              setOrder(i);
+              console.log(i, order);
+            }}
             css={[
-              timelineStyles[`round${project.small === 2 ? "2" : ""}`](
-                project.color,
-                project.name,
-                project.date
-              ),
+              order === i && timelineStyles.selectedOne,
+              timelineStyles.round(project.color, project.name, project.date),
             ]}
           ></button>
         );

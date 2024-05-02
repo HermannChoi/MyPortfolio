@@ -1,4 +1,5 @@
 import { css } from "@emotion/react";
+import { showUp2 } from "./keyframes";
 
 export const flexCenterX2 = css`
   display: flex;
@@ -46,3 +47,12 @@ export const whiteSpaceNoWrap = css`
   text-overflow: ellipsis;
   overflow: hidden;
 `;
+
+export const delayShowUpAni = (delay: number) => {
+  return [
+    css`
+      opacity: 0;
+      animation: ${showUp2} 0.5s ${delay}s forwards;
+    `,
+  ];
+};

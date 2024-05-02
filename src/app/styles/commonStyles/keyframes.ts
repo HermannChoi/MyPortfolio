@@ -92,6 +92,11 @@ from {transform: translateY(-15px); opacity:0;}
 to {transform: translateY(0); opacity:1;}
 `;
 
+export const showUp2 = keyframes`
+from {transform: translateY(15px); opacity:0;}
+to {transform: translateY(0); opacity:1;}
+`;
+
 export const widthZeroToFull = keyframes`
 from {width: 0; opacity:0;}
 to {width: 100%; opacity:1;}

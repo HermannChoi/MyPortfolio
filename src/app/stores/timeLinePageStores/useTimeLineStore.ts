@@ -2,7 +2,7 @@ import { create } from "zustand";
 
 interface UseTimeLineStore {
   order: number | null;
-  setOrder: (order: number) => void;
+  setOrder: (order: number | null) => void;
 }
 
 export const useTimeLineStore = create<UseTimeLineStore>((set) => ({
