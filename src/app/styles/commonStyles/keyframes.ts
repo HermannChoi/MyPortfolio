@@ -5,6 +5,11 @@ from {opacity: 0;}
 to {opacity: 1;}
 `;
 
+export const fadeIn2 = keyframes`
+from {opacity: 0; transform: translateY(-20px)}
+to {opacity: 1;}
+`;
+
 export const fadeOut = keyframes`
 from {opacity:1;} 
 to {opacity:0; display:none;}
@@ -85,4 +90,20 @@ export const moveRight = keyframes`
 export const showUp = keyframes`
 from {transform: translateY(-15px); opacity:0;}
 to {transform: translateY(0); opacity:1;}
+`;
+
+export const widthZeroToFull = keyframes`
+from {width: 0; opacity:0;}
+to {width: 100%; opacity:1;}
+`;
+
+export const leftToRight = keyframes`
+0% {left: 0; opacity: 0;}
+10%,80%{ opacity: 1;}
+100% {left: 80%; opacity: 0;}
+`;
+
+export const floating = keyframes`
+from {transform: translateY(0px);}
+to {transform: translateY(10px);}
 `;
