@@ -1,3 +1,7 @@
+import { FooterType } from "@/app/types/projectComponentTypes/footer";
+import GitHub from "@/app/assets/svg/github.svg";
+import YouTube from "@/app/assets/svg/youtube.svg";
+
 export const todaysLuckInfo = [
   {
     title: "메인 페이지",
@@ -12,6 +16,25 @@ export const todaysLuckInfo = [
   {
     title: "선택카드 페이지",
     explanation:
-      "카드 선택 시 페이지가 라우팅 되어 /detail/1 ~ 5까지 이동되어 카드가 뒤집어지면서 3개의 다른 카드 문양 중 하나가 렌더링 되어 보여지고, 오른쪽 섹션에 긍정의 말과 랜덤의 명언이 나오며 사용자에게 띄워집니다.",
+      "카드 선택 시 페이지가 라우팅 되어 /detail/1 ~ 5까지 이동되어 카드가 뒤집어지면서 3개의 다른 카드 문양 중 하나가 렌더링 되어 보여지고, 오른쪽 섹션에 긍정의 말과 랜덤의 명언이 나오며 사용자에게 띄워집니다. 그리고 헤더의 '오늘의 운세'를 클릭하면 다시 처음으로 돌아가게 구현하였습니다.",
   },
 ];
+
+export const TLFooter: FooterType = {
+  limit:
+    "당시에 애니메이션과 transform에 대한 이해도가 완벽하지 않았기 때문에 카드가 뒤집어 지기 전에 왼쪽 으로 먼저 이동을 해야 하지만, 이것을 구현하지 못했다. 해결방법으로 카드가 옆면으로 width가 0이 될 때 순간적으로 왼쪽으로 보내서 눈속임으로 해결하였다. ",
+  takeaway: "flex에 대한 이해 및 css스킬을 고도화시킬 수 있는 시간이었습니다.",
+  output: "• 구름 풀스택 3회차 1차 스터디 회고 1등에 기여",
+  links: [
+    {
+      href: "https://github.com/BearWithpy/goorm_horoscope_today",
+      src: GitHub,
+      name: "GitHub",
+    },
+    {
+      href: "https://www.youtube.com/watch?v=DLFvBqC-DBY",
+      src: YouTube,
+      name: "YouTube",
+    },
+  ],
+};

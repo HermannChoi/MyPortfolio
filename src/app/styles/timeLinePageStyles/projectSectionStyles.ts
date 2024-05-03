@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { flexColumnCenter } from "../commonStyles/commonStyles";
+import { flexCenterX2 } from "../commonStyles/commonStyles";
 
 export const projectSection = {
   outline: [
@@ -8,10 +8,11 @@ export const projectSection = {
       gap: 10px;
       width: 100%;
       padding: 20px;
+      overflow: hidden;
     `,
   ],
   picture: [
-    flexColumnCenter,
+    flexCenterX2,
     css`
       flex: 1;
       row-gap: 20px;
@@ -30,7 +31,6 @@ export const projectSection = {
   articleContainer: [
     css`
       flex: 1;
-      height: 100%;
     `,
   ],
   article: [
@@ -40,7 +40,33 @@ export const projectSection = {
       justify-content: center;
       row-gap: 20px;
       width: 100%;
-      padding-top: 20px;
+      height: 100%;
+      overflow-y: scroll;
+    `,
+  ],
+  lastContainer: [
+    css`
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      row-gap: 20px;
+      width: 100%;
+      padding: 20px;
+      padding-right: 20%;
+    `,
+  ],
+  linkContainer: [
+    flexCenterX2,
+    css`
+      gap: 10px;
+      height: 100%;
+    `,
+  ],
+  link: [
+    css`
+      padding: 3px;
+      border: 2px solid #ffffff;
+      border-radius: 40%;
     `,
   ],
 };

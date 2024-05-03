@@ -20,7 +20,7 @@ export const timelinePageStyles = {
         position: sticky;
         top: 0px;
         width: 100%;
-        height: 120px;
+        height: 150px;
         background-color: #00000090;
         z-index: 100;
       `,

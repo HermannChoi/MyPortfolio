@@ -11,7 +11,11 @@ import {
   delayShowUpAni,
   flexColumnCenter,
 } from "@/app/styles/commonStyles/commonStyles";
-import { todaysLuckInfo } from "@/app/constants/projectInfos/todaysLuck";
+import {
+  TLFooter,
+  todaysLuckInfo,
+} from "@/app/constants/projectInfos/todaysLuck";
+import Footer from "../projectTemplates/Footer";
 
 const TodaysLuck = () => {
   const images = [TL2, TL3, TL4];
@@ -69,6 +73,7 @@ const TodaysLuck = () => {
           </div>
         );
       })}
+      <Footer info={TLFooter} />
     </div>
   );
 };
