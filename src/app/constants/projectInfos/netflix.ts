@@ -1,11 +1,18 @@
 import Github from "@/app/assets/svg/github.svg";
+import FirstImage from "@/app/assets/projectImages/netflix/netflix1.png";
+import { FirstInfoType } from "@/app/types/projectComponentTypes/firstInfo";
 import { FooterType } from "@/app/types/projectComponentTypes/footer";
 
-export const netflixFirst = {
-  name: "Netflix 사이트 만들기",
+export const netflixFirstInfo: FirstInfoType = {
+  src: FirstImage,
+  title: "Netflix 사이트 만들기",
   subtitle: "HTML/CSS를 이용해 Netflix화면 구현하기",
-  techStack: "기술 스택 : HTML, CSS",
   period: " 개발 기간 : 2023.10.18 ~ 2023.10.20 (3일)",
+  personnel: "개인 프로젝트",
+  language: "기술 스택 : HTML, CSS",
+  framework: "-",
+  stateLibrary: "-",
+  etc: "-",
   description:
     "구름톤 첫번째 과제로 HTML과 CSS만을 이용해 넷플릭스 첫화면을 구현해 보았습니다.",
 };

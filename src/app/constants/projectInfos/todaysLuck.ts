@@ -1,6 +1,22 @@
 import { FooterType } from "@/app/types/projectComponentTypes/footer";
 import GitHub from "@/app/assets/svg/github.svg";
 import YouTube from "@/app/assets/svg/youtube.svg";
+import { FirstInfoType } from "@/app/types/projectComponentTypes/firstInfo";
+import FirstImage from "@/app/assets/projectImages/todaysLuck/image3.png";
+
+export const todaysLuckFirstInfo: FirstInfoType = {
+  src: FirstImage,
+  title: "오늘의 운세",
+  subtitle: "일일 랜덤 운세 서비스",
+  period: "2023.11.29 ~ 2023.12.04 (6일)",
+  personnel: "3명 (Front-End 2명, Back-End 1명)",
+  responsibility:
+    "Front-End (UI/UX Design 및 전체적인 페이지 구성, 애니메이션)",
+  language: "TypeScript, HTML, CSS(module)",
+  framework: "React",
+  stateLibrary: "Zustand",
+  etc: "Figma, Slack, GitHub",
+};
 
 export const todaysLuckInfo = [
   {

@@ -5,10 +5,7 @@ import { blogStyles } from "@/app/styles/firstPageStyles/firstPageStyles";
 import { projectSection } from "@/app/styles/timeLinePageStyles/projectSectionStyles";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  FooterComponent,
-  FooterType,
-} from "@/app/types/projectComponentTypes/footer";
+import { FooterComponent } from "@/app/types/projectComponentTypes/footer";
 
 const Footer: React.FC<FooterComponent> = ({ info }) => {
   return (
