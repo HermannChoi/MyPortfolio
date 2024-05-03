@@ -45,6 +45,7 @@ export const formStyles = {
         align-items: center;
         justify-content: center;
         width: 20vw;
+        ${!isSubmiited && `min-width: 200px;`}
         height: 5rem;
         border: 5px solid #a2ffe3;
         border-radius: 20px;
@@ -54,7 +55,7 @@ export const formStyles = {
         box-shadow: 0 0 0 100vw black;
         overflow: hidden;
         z-index: 100;
-        transition: 1s;
+        // transition: 1s;
         animation: ${isSubmiited && firstCoverFadeOut} 1.5s forwards;
       `,
     ];
@@ -76,7 +77,7 @@ export const formStyles = {
     text-align: center !important;
     background-color: transparent !important;
     color: white;
-    transition: 0.5s ease-out;
+    transition: 0.2s ease-out;
     &:focus {
       width: 15vw;
       border: 3px solid #c8ffef;

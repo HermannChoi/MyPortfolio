@@ -18,7 +18,7 @@ const TimeLineContents = () => {
             key={i}
             onClick={() => {
               setOrder(i);
-              scrollToTop(150);
+              scrollToTop(100);
             }}
             css={[
               order === i && timelineStyles.selectedOne(project.color),

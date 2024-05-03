@@ -20,6 +20,11 @@ from {opacity:1;}
 to {opacity:0; display:none;}
 `;
 
+export const fadeOut2 = keyframes`
+0%, 50% {opacity:1;} 
+100% {opacity:0; display:none;}
+`;
+
 export const firstCoverFadeOut = keyframes`
 0%{width: 20vw; opacity: 1;}
 30%{width: 180px; height: 180px; border-radius: 50%;}

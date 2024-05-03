@@ -2,6 +2,7 @@ import TypeIt from "typeit-react";
 
 const TypeItSpace = () => {
   const textStyle = {
+    height: "30px",
     backgroundImage: "linear-gradient(to right, pink, skyblue)",
     WebkitBackgroundClip: "text", // 텍스트 색깔을 그라데이션에 맞추기 위한 설정
     color: "transparent", // 텍스트 자체의 색깔을 투명하게 설정

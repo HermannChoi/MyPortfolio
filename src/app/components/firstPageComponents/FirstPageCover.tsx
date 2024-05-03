@@ -9,8 +9,11 @@ import {
 } from "@/app/styles/firstPageStyles/firstPageCoverStyles";
 import { useFirstPageCoverStore } from "@/app/stores/firstPageCoverStores/useFirstPageCoverStore";
 import { useState } from "react";
+import { useCookies } from "react-cookie";
 
 const FirstPageCover = () => {
+  const [, setCookie] = useCookies(["name"]);
+
   const [message, setMessage] = useState("입장 조건");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -36,7 +39,10 @@ const FirstPageCover = () => {
           autoFocus
           type="text"
           placeholder="이름 입력"
-          onChange={(e) => setUserName(e.target.value)}
+          onChange={(e) => {
+            setUserName(e.target.value);
+            setCookie("name", e.target.value);
+          }}
           value={userName}
           css={[formStyles.input]}
         />

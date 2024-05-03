@@ -15,12 +15,12 @@ import {
 export const timelinePageStyles = {
   header: [
     [
-      flexCenterX2,
       css`
         position: sticky;
         top: 0px;
         width: 100%;
-        height: 150px;
+        height: 120px;
+        padding-top: 40px;
         background-color: #00000090;
         z-index: 100;
       `,
@@ -31,7 +31,7 @@ export const timelinePageStyles = {
       flexColumnCenter,
       widthHeightFull,
       css`
-        row-gap: ${order === null ? "100px" : "40px"};
+        row-gap: ${order === null ? "100px" : "20px"};
         padding: 50px;
         transition: row-gap 1s;
       `,
@@ -41,15 +41,15 @@ export const timelinePageStyles = {
     css`
       position: absolute;
       top: 20px;
-      left: 20px;
-      width: 60px;
-      height: 40px;
+      left: 30px;
+      width: 50px;
+      height: 30px;
       border: none;
       background-color: transparent;
       font-size: 2em;
       transition: 0.3s;
       &:hover {
-        left: 15px;
+        left: 25px;
         color: ${commonColors.representative};
       }
     `,
@@ -124,6 +124,7 @@ export const timelineStyles = {
         &:hover {
           transform: scale(1.2);
           background-color: ${color};
+          box-shadow: 0 0 30px ${color};
         }
         &::before {
           content: "${date}";
@@ -144,7 +145,7 @@ export const timelineStyles = {
           padding: 0px 20px;
           border: 1px solid ${color};
           border-radius: 10px;
-          background-color: #ffffffc7;
+          background-color: #ffffff;
           color: black;
           font-size: 1.1em;
           font-weight: bold;

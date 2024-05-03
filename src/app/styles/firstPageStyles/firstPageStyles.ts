@@ -22,6 +22,22 @@ export const firstPageStyles = {
       `,
     ];
   },
+  logoutBtn: [
+    css`
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 80px;
+      height: 30px;
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+      background-color: transparent;
+      &:hover {
+        border-color: ${commonColors.representative};
+        color: ${commonColors.representative};
+      }
+    `,
+  ],
   imageContainer: (isClicked: boolean) => {
     return [
       css`

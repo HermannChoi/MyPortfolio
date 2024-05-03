@@ -1,6 +1,6 @@
 export const projectsInfo = [
   { color: "red", name: "넷플릭스", date: "23.10. ~ 23.10." },
-  { color: "pink", name: "Todo wiht JS", date: "23.10. ~ 23.10." },
+  { color: "pink", name: "Todo with JS", date: "23.10. ~ 23.10." },
   {
     color: "blue",
     name: "GitHub Finder",

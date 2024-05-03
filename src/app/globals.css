@@ -23,3 +23,7 @@ select {
 button {
   cursor: pointer;
 }
+
+p {
+  line-height: 25px;
+}
