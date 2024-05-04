@@ -16,8 +16,9 @@ import {
   todaysLuckFirstInfo,
   todaysLuckInfo,
 } from "@/app/constants/projectInfos/todaysLuck";
-import Footer from "../projectTemplates/Footer";
-import FirstInfo from "../projectTemplates/FirstInfo";
+import Footer from "../../projectTemplates/Footer";
+import FirstInfo from "../../projectTemplates/FirstInfo";
+import MiddleInfo from "../../projectTemplates/MiddleInfo";
 
 const TodaysLuck = () => {
   const images = [TL2, TL3, TL4];
@@ -25,25 +26,7 @@ const TodaysLuck = () => {
   return (
     <div css={[flexColumnCenter, `width: 100%;`]}>
       <FirstInfo info={todaysLuckFirstInfo} />
-      {todaysLuckInfo.map((info, i) => {
-        return (
-          <div key={i} css={[projectSection.outline, delayShowUpAni(0.2)]}>
-            <picture css={projectSection.picture}>
-              <Image
-                src={images[i]}
-                alt="넷플릭스 프로젝트 사진"
-                css={projectSection.image}
-              />
-            </picture>
-            <div css={projectSection.articleContainer}>
-              <article css={projectSection.article}>
-                <h3>{info.title}</h3>
-                <p>{info.explanation}</p>
-              </article>
-            </div>
-          </div>
-        );
-      })}
+      <MiddleInfo info={todaysLuckInfo} />
       <Footer info={TLFooter} />
     </div>
   );

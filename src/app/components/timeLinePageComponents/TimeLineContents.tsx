@@ -12,13 +12,14 @@ const TimeLineContents = () => {
 
   return (
     <div css={[timelineStyles.line]}>
+      <div css={timelineStyles.progressBar(order)} />
       {projectsInfo.map((project, i) => {
         return (
           <button
             key={i}
             onClick={() => {
               setOrder(i);
-              scrollToTop(100);
+              scrollToTop(150);
             }}
             css={[
               order === i && timelineStyles.selectedOne(project.color),
@@ -26,7 +27,7 @@ const TimeLineContents = () => {
               delayShowUpAni2(i / 6 + 1.5),
             ]}
           >
-            {i === order && "✓"}
+            {i === order ? "✓" : i + 1}
           </button>
         );
       })}

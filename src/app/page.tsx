@@ -11,6 +11,7 @@ import { firstPageStyles } from "./styles/firstPageStyles/firstPageStyles";
 import { useFirstPageCoverStore } from "./stores/firstPageCoverStores/useFirstPageCoverStore";
 import { useCookies } from "react-cookie";
 import BlackPage from "./components/firstPageComponents/BlackPage";
+import Header from "./components/firstPageComponents/Header";
 
 export default function Home() {
   const [cookies, , removeCookie] = useCookies(["name"]);
@@ -18,11 +19,6 @@ export default function Home() {
   const [isProfileClicked, setIsProfileClicked] = useState(false);
 
   const { isFirstLogin, setIsFirstLogin } = useFirstPageCoverStore();
-
-  const handleClickLogout = () => {
-    removeCookie("name");
-    window.location.reload();
-  };
 
   useEffect(() => {
     if (cookies.name) {
@@ -34,12 +30,7 @@ export default function Home() {
     <div css={firstPageStyles.page(isProfileClicked)}>
       <BlackPage />
       {!isFirstLogin && <FirstPageCover />}
-      <button
-        css={firstPageStyles.logoutBtn}
-        onClick={() => handleClickLogout()}
-      >
-        로그아웃
-      </button>
+      <Header />
       <TypeItSpace />
       <ProfileSpace setIsProfileClicked={setIsProfileClicked} />
       <BlogSpace />

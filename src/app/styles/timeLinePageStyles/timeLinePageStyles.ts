@@ -19,9 +19,10 @@ export const timelinePageStyles = {
         position: sticky;
         top: 0px;
         width: 100%;
-        height: 120px;
+        height: 150px;
         padding-top: 40px;
         background-color: #00000090;
+        overflow-x: auto;
         z-index: 100;
       `,
     ],
@@ -92,15 +93,30 @@ export const timelineStyles = {
     css`
       position: relative;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
       width: 100%;
+      min-width: 1080px;
       height: 5px;
+      border-radius: 10px;
       background-color: #ffffff;
       opacity: 0;
       animation: ${widthZeroToFull} 0.5s 0.6s linear forwards;
     `,
   ],
+  progressBar: (order: number | null) => {
+    return [
+      css`
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: ${order !== null && order * 10 * 0.91 + 9}%;
+        height: 100%;
+        background-color: ${commonColors.representative};
+        transition: 0.5s;
+      `,
+    ];
+  },
   selectedOne: (color: string) => {
     return [
       css`
@@ -118,7 +134,7 @@ export const timelineStyles = {
         height: 0px;
         border: 2px solid #ffffff;
         border-radius: 50%;
-        background-color: gray;
+        background-color: #4a4a4a;
         overflow: hidden;
         transition: 0.2s;
         &:hover {

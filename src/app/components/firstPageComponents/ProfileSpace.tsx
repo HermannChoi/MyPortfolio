@@ -37,6 +37,7 @@ const ProfileSpace: React.FC<ProfileSpace> = ({ setIsProfileClicked }) => {
           src={Profile}
           alt="프로필 이미지"
           css={firstPageStyles.image(isClicked)}
+          priority={true}
         />
       </button>
       <p css={firstPageStyles.arrow}>⬆</p>

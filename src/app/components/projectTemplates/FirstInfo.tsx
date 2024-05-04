@@ -28,7 +28,8 @@ const FirstInfo: React.FC<FirstInfo> = ({ info }) => {
           </p>
 
           <p>
-            <h3>개발 환경</h3>
+            <span css={[`font-size: 1.1em; font-weight: 500;`]}>개발 환경</span>
+            <br />
             언어 : {info.language} <br />
             프레임워크 : {info.framework} <br />
             상태 라이브러리 : {info.stateLibrary} <br />

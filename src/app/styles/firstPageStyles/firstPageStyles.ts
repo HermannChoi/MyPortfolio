@@ -22,6 +22,14 @@ export const firstPageStyles = {
       `,
     ];
   },
+  name: [
+    css`
+      position: absolute;
+      top: 10px;
+      right: 100px;
+      line-height: 30px;
+    `,
+  ],
   logoutBtn: [
     css`
       position: absolute;

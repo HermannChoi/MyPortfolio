@@ -7,15 +7,25 @@ import { timelinePageStyles } from "@/app/styles/timeLinePageStyles/timeLinePage
 import { useTimeLineStore } from "@/app/stores/timeLinePageStores/useTimeLineStore";
 import { widthHeightFull } from "@/app/styles/commonStyles/commonStyles";
 import { useEffect } from "react";
-import Netflix from "@/app/components/timeLinePageComponents/Netflix";
-import TodaysLuck from "@/app/components/timeLinePageComponents/TodaysLuck";
+import Netflix from "@/app/components/timeLinePageComponents/myProjects/Netflix";
+import TodaysLuck from "@/app/components/timeLinePageComponents/myProjects/TodaysLuck";
 import { scrollToTop } from "@/app/utils/scrollToTop";
 import Link from "next/link";
+import { useCookies } from "react-cookie";
+import { useRouter } from "next/navigation";
+import Header from "@/app/components/firstPageComponents/Header";
+import GithubFinder from "@/app/components/timeLinePageComponents/myProjects/GithubFinder";
 
 const TimeLine = () => {
+  const router = useRouter();
+  const [cookies] = useCookies(["name"]);
+
   const { order, setOrder } = useTimeLineStore();
 
   useEffect(() => {
+    if (!cookies) {
+      router.push("/");
+    }
     setOrder(null);
   }, []);
 
@@ -24,6 +34,7 @@ const TimeLine = () => {
       <Link href={"/"} css={timelinePageStyles.backBtn}>
         ⬅
       </Link>
+      <Header />
       <h1 css={timelinePageStyles.title}>Time Line of My Projects</h1>
       <p css={[timelinePageStyles.guide(order)]}>
         원들을 클릭하여 프로젝트를 보세요!
@@ -37,7 +48,7 @@ const TimeLine = () => {
         ) : order === 1 ? (
           <></>
         ) : order === 2 ? (
-          <></>
+          <GithubFinder />
         ) : order === 3 ? (
           <></>
         ) : order === 4 ? (
