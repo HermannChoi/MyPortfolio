@@ -15,9 +15,10 @@ const FirstPageCover = () => {
   const [, setCookie] = useCookies(["name"]);
 
   const [message, setMessage] = useState("입장 조건");
+  const [userName, setUserName] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const { userName, setUserName, setIsFirstLogin } = useFirstPageCoverStore();
+  const { setIsFirstLogin } = useFirstPageCoverStore();
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -26,6 +27,8 @@ const FirstPageCover = () => {
     }
     setMessage("성공 ✓");
     setIsSubmitted(true);
+    console.log(userName);
+    setCookie("name", userName);
     setTimeout(() => {
       setIsFirstLogin(true);
     }, 7500);
@@ -39,10 +42,7 @@ const FirstPageCover = () => {
           autoFocus
           type="text"
           placeholder="이름 입력"
-          onChange={(e) => {
-            setUserName(e.target.value);
-            setCookie("name", e.target.value);
-          }}
+          onChange={(e) => setUserName(e.target.value)}
           value={userName}
           css={[formStyles.input]}
         />

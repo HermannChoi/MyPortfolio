@@ -4,16 +4,14 @@
 
 import { useCookies } from "react-cookie";
 import { firstPageStyles } from "@/app/styles/firstPageStyles/firstPageStyles";
-import { useEffect } from "react";
-import { useFirstPageCoverStore } from "@/app/stores/firstPageCoverStores/useFirstPageCoverStore";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 const Header = () => {
   const router = useRouter();
 
   const [cookies, , removeCookie] = useCookies(["name"]);
-
-  const { userName, setUserName } = useFirstPageCoverStore();
+  const [userName, setUserName] = useState("");
 
   const handleClickLogout = () => {
     removeCookie("name");
