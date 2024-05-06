@@ -10,6 +10,8 @@ export interface FirstInfoType {
   language: string;
   framework: string;
   stateLibrary: string;
+  server?: string;
+  db?: string;
   etc: string;
   description?: string;
 }

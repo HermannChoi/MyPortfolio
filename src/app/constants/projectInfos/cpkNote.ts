@@ -3,10 +3,10 @@ import GitHub from "@/app/assets/svg/github.svg";
 import YouTube from "@/app/assets/svg/youtube.svg";
 import { FirstInfoType } from "@/app/types/projectComponentTypes/firstInfo";
 import { MiddleContentsType } from "@/app/types/middleInfo";
-import image3 from "@/app/assets/projectImages/cpkNote/image3.png";
-import image4 from "@/app/assets/projectImages/cpkNote/image4.png";
 import image1 from "@/app/assets/projectImages/cpkNote/image1.png";
 import image2 from "@/app/assets/projectImages/cpkNote/image2.png";
+import image3 from "@/app/assets/projectImages/cpkNote/image3.png";
+import image4 from "@/app/assets/projectImages/cpkNote/image4.png";
 
 export const cpkNoteFirstInfo: FirstInfoType = {
   src: image1,

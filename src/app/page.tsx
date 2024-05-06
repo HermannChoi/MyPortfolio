@@ -17,6 +17,7 @@ export default function Home() {
   const [cookies] = useCookies(["name"]);
 
   const [isProfileClicked, setIsProfileClicked] = useState(false);
+  const [blackPage, setBlackPage] = useState(true);
 
   const { isFirstLogin, setIsFirstLogin } = useFirstPageCoverStore();
 
@@ -24,11 +25,14 @@ export default function Home() {
     if (cookies.name) {
       setIsFirstLogin(true);
     }
+    setTimeout(() => {
+      setBlackPage(false);
+    }, 800);
   }, []);
 
   return (
     <div css={firstPageStyles.page(isProfileClicked)}>
-      <BlackPage />
+      {blackPage && <BlackPage />}
       {!isFirstLogin && <FirstPageCover />}
       <Header />
       <TypeItSpace />

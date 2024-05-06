@@ -2,7 +2,7 @@
 "use client";
 /** @jsxImportSource @emotion/react */
 
-import TimeLineContents from "@/app/components/timeLinePageComponents/TimeLineContents";
+import TimeLineContents from "@/app/components/timeLinePageComponents/TimeLineBar";
 import { timelinePageStyles } from "@/app/styles/timeLinePageStyles/timeLinePageStyles";
 import { useTimeLineStore } from "@/app/stores/timeLinePageStores/useTimeLineStore";
 import { widthHeightFull } from "@/app/styles/commonStyles/commonStyles";
@@ -14,6 +14,8 @@ import Link from "next/link";
 import Header from "@/app/components/firstPageComponents/Header";
 import GithubFinder from "@/app/components/timeLinePageComponents/myProjects/GithubFinder";
 import CpkNote from "@/app/components/timeLinePageComponents/myProjects/CpkNote";
+import Zac from "@/app/components/timeLinePageComponents/myProjects/Zac";
+import EarthIdeN from "@/app/components/timeLinePageComponents/myProjects/EarthIdeN";
 
 const TimeLine = () => {
   const { order, setOrder } = useTimeLineStore();
@@ -51,9 +53,9 @@ const TimeLine = () => {
         ) : order === 6 ? (
           <CpkNote />
         ) : order === 7 ? (
-          <></>
+          <Zac />
         ) : order === 8 ? (
-          <></>
+          <EarthIdeN />
         ) : (
           <></>
         )}

@@ -33,6 +33,10 @@ const FirstInfo: React.FC<FirstInfo> = ({ info }) => {
             언어 : {info.language} <br />
             프레임워크 : {info.framework} <br />
             상태 라이브러리 : {info.stateLibrary} <br />
+            {info.server && `서버 : ${info.server}`}
+            <br />
+            {info.db && `서버 : ${info.db}`}
+            <br />
             ETC : {info.etc}
           </p>
           <p>{info.description}</p>

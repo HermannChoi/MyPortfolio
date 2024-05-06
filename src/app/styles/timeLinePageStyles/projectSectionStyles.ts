@@ -57,7 +57,6 @@ export const projectSection = {
       row-gap: 20px;
       width: 100%;
       padding: 20px;
-      padding-right: 20%;
     `,
   ],
   linkContainer: [

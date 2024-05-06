@@ -33,6 +33,7 @@ export const timelinePageStyles = {
       widthHeightFull,
       css`
         row-gap: ${order === null ? "100px" : "20px"};
+        min-width: 360px;
         padding: 50px;
         transition: row-gap 1s;
 
@@ -124,7 +125,7 @@ export const timelineStyles = {
         left: 0;
         width: ${order !== null && order * 10 * 0.91 + 9}%;
         height: 100%;
-        background-color: ${commonColors.representative};
+        background-color: lime;
         transition: 0.5s;
       `,
     ];

@@ -25,7 +25,14 @@ const MiddleInfo: React.FC<MiddleInfoType> = ({ info }) => {
             <div css={projectSection.articleContainer}>
               <article css={projectSection.article}>
                 <h3>{info.title}</h3>
-                <p>{info.description}</p>
+                <h4>{info.subtitle}</h4>
+                <pre css={[`white-space: break-spaces`]}>
+                  {info.description}
+                </pre>
+                <h4>{info.subtitle2}</h4>
+                <pre css={[`white-space: break-spaces`]}>
+                  {info.description2}
+                </pre>
               </article>
             </div>
           </div>

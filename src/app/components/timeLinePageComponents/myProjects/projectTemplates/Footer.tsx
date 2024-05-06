@@ -10,6 +10,7 @@ import { FooterComponent } from "@/app/types/projectComponentTypes/footer";
 const Footer: React.FC<FooterComponent> = ({ info }) => {
   return (
     <div css={projectSection.lastContainer}>
+      <hr css={[`width: 100%; border-color: gray;`]} />
       <article css={projectSection.article}>
         {info.limit?.length! > 0 && <h3>한계 점</h3>}
         <p>{info.limit}</p>
