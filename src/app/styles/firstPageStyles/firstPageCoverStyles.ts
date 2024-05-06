@@ -136,7 +136,7 @@ export const wallStyles = {
         background-color: #92ffde;
         z-index: 20;
         animation: ${isSubmiited && turnLeft} 2s 1.5s forwards;
-        &:before {
+        &::before {
           content: "";
           position: absolute;
           top: 50%;
@@ -191,7 +191,7 @@ export const wallStyles = {
         background-color: #92ffde;
         z-index: 30;
         animation: ${isSubmiited && turnRight} 2s 1s forwards;
-        &:before {
+        &::before {
           content: "";
           position: absolute;
           top: 0;

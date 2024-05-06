@@ -40,7 +40,6 @@ const ProfileSpace: React.FC<ProfileSpace> = ({ setIsProfileClicked }) => {
           priority={true}
         />
       </button>
-      <p css={firstPageStyles.arrow}>⬆</p>
       <p css={[`color: gray;`]}>사진을 클릭해 보세요!</p>
     </>
   );

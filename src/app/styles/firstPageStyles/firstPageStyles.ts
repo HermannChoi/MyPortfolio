@@ -89,12 +89,6 @@ export const firstPageStyles = {
       `,
     ];
   },
-  arrow: [
-    css`
-      font-size: 1.5em;
-      animation: ${floating} 2s alternate infinite linear;
-    `,
-  ],
 };
 
 export const blogStyles = {

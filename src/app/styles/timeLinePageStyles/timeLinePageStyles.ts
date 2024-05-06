@@ -45,10 +45,11 @@ export const timelinePageStyles = {
     ];
   },
   backBtn: [
+    flexCenterX2,
     css`
       position: absolute;
-      top: 20px;
-      left: 30px;
+      top: 10px;
+      left: 20px;
       width: 50px;
       height: 30px;
       border: none;
@@ -56,8 +57,7 @@ export const timelinePageStyles = {
       font-size: 2em;
       transition: 0.3s;
       &:hover {
-        left: 25px;
-        color: ${commonColors.representative};
+        left: 15px;
       }
     `,
   ],
@@ -150,6 +150,7 @@ export const timelineStyles = {
         background-color: #4a4a4a;
         overflow: hidden;
         transition: 0.2s;
+        user-select: none;
         &:hover {
           transform: scale(1.2);
           background-color: ${color};

@@ -16,6 +16,8 @@ import GithubFinder from "@/app/components/timeLinePageComponents/myProjects/Git
 import CpkNote from "@/app/components/timeLinePageComponents/myProjects/CpkNote";
 import Zac from "@/app/components/timeLinePageComponents/myProjects/Zac";
 import EarthIdeN from "@/app/components/timeLinePageComponents/myProjects/EarthIdeN";
+import Image from "next/image";
+import Arrow from "@/app/assets/svg/arrow.svg";
 
 const TimeLine = () => {
   const { order, setOrder } = useTimeLineStore();
@@ -27,7 +29,7 @@ const TimeLine = () => {
   return (
     <div css={[timelinePageStyles.main(order)]}>
       <Link href={"/"} css={timelinePageStyles.backBtn}>
-        ⬅
+        <Image src={Arrow} alt="arrow" priority={true} />
       </Link>
       <Header />
       <h1 css={timelinePageStyles.title}>Time Line of My Projects</h1>
