@@ -11,21 +11,14 @@ import Netflix from "@/app/components/timeLinePageComponents/myProjects/Netflix"
 import TodaysLuck from "@/app/components/timeLinePageComponents/myProjects/TodaysLuck";
 import { scrollToTop } from "@/app/utils/scrollToTop";
 import Link from "next/link";
-import { useCookies } from "react-cookie";
-import { useRouter } from "next/navigation";
 import Header from "@/app/components/firstPageComponents/Header";
 import GithubFinder from "@/app/components/timeLinePageComponents/myProjects/GithubFinder";
+import CpkNote from "@/app/components/timeLinePageComponents/myProjects/CpkNote";
 
 const TimeLine = () => {
-  const router = useRouter();
-  const [cookies] = useCookies(["name"]);
-
   const { order, setOrder } = useTimeLineStore();
 
   useEffect(() => {
-    if (!cookies) {
-      router.push("/");
-    }
     setOrder(null);
   }, []);
 
@@ -56,7 +49,7 @@ const TimeLine = () => {
         ) : order === 5 ? (
           <TodaysLuck />
         ) : order === 6 ? (
-          <></>
+          <CpkNote />
         ) : order === 7 ? (
           <></>
         ) : order === 8 ? (

@@ -9,6 +9,11 @@ export const projectSection = {
       width: 100%;
       padding: 20px;
       overflow: hidden;
+
+      @media (max-width: 1260px) {
+        flex-direction: column;
+        pading: 5px;
+      }
     `,
   ],
   picture: [

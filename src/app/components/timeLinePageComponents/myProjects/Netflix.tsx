@@ -7,9 +7,9 @@ import {
   netflixFooter,
   netflixInfo,
 } from "@/app/constants/projectInfos/netflix";
-import Footer from "../../projectTemplates/Footer";
-import FirstInfo from "../../projectTemplates/FirstInfo";
-import MiddleInfo from "../../projectTemplates/MiddleInfo";
+import Footer from "./projectTemplates/Footer";
+import FirstInfo from "./projectTemplates/FirstInfo";
+import MiddleInfo from "./projectTemplates/MiddleInfo";
 
 const Netflix = () => {
   return (

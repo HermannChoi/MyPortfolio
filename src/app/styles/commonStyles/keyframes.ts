@@ -119,8 +119,8 @@ export const leftToRight = keyframes`
 `;
 
 export const floating = keyframes`
-from {transform: translateY(0px); opacity: 1;}
-to {transform: translateY(10px); opacity: 0.5;}
+from {transform: translateY(0px) scale(1);}
+to {transform: translateY(10px) scale(0.9);}
 `;
 
 export const widthHeightZeroTo40 = keyframes`

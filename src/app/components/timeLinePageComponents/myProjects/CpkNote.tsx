@@ -6,19 +6,19 @@ import FirstInfo from "./projectTemplates/FirstInfo";
 import MiddleInfo from "./projectTemplates/MiddleInfo";
 import Footer from "./projectTemplates/Footer";
 import {
-  githubFinderFooter,
-  githubFinderInfo,
-  githubFirstInfo,
-} from "@/app/constants/projectInfos/githubFinder";
+  cpkNoteFirstInfo,
+  cpkNoteFooter,
+  cpkNoteInfo,
+} from "@/app/constants/projectInfos/cpkNote";
 
-const GithubFinder = () => {
+const CpkNote = () => {
   return (
     <div css={[flexColumnCenter, `width: 100%;`]}>
-      <FirstInfo info={githubFirstInfo} />
-      <MiddleInfo info={githubFinderInfo} />
-      <Footer info={githubFinderFooter} />
+      <FirstInfo info={cpkNoteFirstInfo} />
+      <MiddleInfo info={cpkNoteInfo} />
+      <Footer info={cpkNoteFooter} />
     </div>
   );
 };
 
-export default GithubFinder;
+export default CpkNote;

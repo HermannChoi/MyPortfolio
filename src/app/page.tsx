@@ -14,7 +14,7 @@ import BlackPage from "./components/firstPageComponents/BlackPage";
 import Header from "./components/firstPageComponents/Header";
 
 export default function Home() {
-  const [cookies, , removeCookie] = useCookies(["name"]);
+  const [cookies] = useCookies(["name"]);
 
   const [isProfileClicked, setIsProfileClicked] = useState(false);
 

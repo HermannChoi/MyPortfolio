@@ -4,20 +4,28 @@
 
 import { useCookies } from "react-cookie";
 import { firstPageStyles } from "@/app/styles/firstPageStyles/firstPageStyles";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useFirstPageCoverStore } from "@/app/stores/firstPageCoverStores/useFirstPageCoverStore";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
+  const router = useRouter();
+
   const [cookies, , removeCookie] = useCookies(["name"]);
 
   const { userName, setUserName } = useFirstPageCoverStore();
 
   const handleClickLogout = () => {
-    removeCookie("name", { path: "/" });
-    window.location.reload();
+    removeCookie("name");
+    setTimeout(() => {
+      window.location.reload();
+    }, 100);
   };
 
   useEffect(() => {
+    if (!cookies.name) {
+      router.push("/");
+    }
     setUserName(cookies.name);
   }, [userName]);
 

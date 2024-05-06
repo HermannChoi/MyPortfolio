@@ -35,6 +35,11 @@ export const timelinePageStyles = {
         row-gap: ${order === null ? "100px" : "20px"};
         padding: 50px;
         transition: row-gap 1s;
+
+        @media (max-width: 1260px) {
+          padding: 20px;
+          padding-top: 70px;
+        }
       `,
     ];
   },
@@ -57,6 +62,7 @@ export const timelinePageStyles = {
   ],
   title: [
     css`
+      text-align: center;
       animation: ${fadeIn2} 1s;
     `,
   ],
@@ -68,7 +74,10 @@ export const timelinePageStyles = {
         opacity: 0;
         transition: 0.5s;
         animation: ${fadeIn2} 1s 0.3s forwards,
-          ${floating} 1.3s 1.3s alternate infinite linear;
+          ${order === null && //엔진 부하를 줄이기 위해 연산자로 적용
+          css`
+            ${floating} 1.3s 1.3s alternate infinite linear
+          `};
       `,
     ];
   },
@@ -96,12 +105,15 @@ export const timelineStyles = {
       justify-content: space-evenly;
       align-items: center;
       width: 100%;
-      min-width: 1080px;
       height: 5px;
       border-radius: 10px;
       background-color: #ffffff;
       opacity: 0;
       animation: ${widthZeroToFull} 0.5s 0.6s linear forwards;
+
+      @media (max-width: 1000px) {
+        min-width: 1000px;
+      }
     `,
   ],
   progressBar: (order: number | null) => {

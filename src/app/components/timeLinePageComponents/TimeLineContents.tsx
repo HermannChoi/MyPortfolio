@@ -24,7 +24,7 @@ const TimeLineContents = () => {
             css={[
               order === i && timelineStyles.selectedOne(project.color),
               timelineStyles.round(project.color, project.name, project.date),
-              delayShowUpAni2(i / 6 + 1.5),
+              delayShowUpAni2(i / 6 + 1.2),
             ]}
           >
             {i === order ? "✓" : i + 1}
