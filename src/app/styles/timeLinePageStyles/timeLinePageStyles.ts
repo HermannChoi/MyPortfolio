@@ -163,6 +163,7 @@ export const timelineStyles = {
           transform: translateX(-50%);
           width: 100px;
           color: gray;
+          pointer-events: none;
         }
         &:hover::after {
           content: "${name}";

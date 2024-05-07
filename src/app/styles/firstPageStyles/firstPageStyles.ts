@@ -6,19 +6,20 @@ import {
   flexColumnCenterX2,
   whiteSpaceNoWrap,
   widthHeightFull,
-  widthHeightVhFull,
 } from "../commonStyles/commonStyles";
-import { fadeIn, floating } from "../commonStyles/keyframes";
+import { fadeIn } from "../commonStyles/keyframes";
 
 export const firstPageStyles = {
   page: (isProfileClicked: boolean) => {
     return [
-      widthHeightVhFull,
+      widthHeightFull,
       flexColumnCenterX2,
       css`
-        row-gap: 20px;
+        row-gap: 25px;
+        padding-top: 12%;
+        background: linear-gradient(0deg, black, #292929);
         transition: 0.5s;
-        ${isProfileClicked && `transform: translateY(-100vh)`}
+        ${isProfileClicked && `transform: translateY(-120vh)`}
       `,
     ];
   },
@@ -52,8 +53,8 @@ export const firstPageStyles = {
         position: relative;
         width: 250px;
         height: 250px;
-        border: none;
-        border-radius: 40%;
+        border: 1px solid gray;
+        border-radius: 30%;
         overflow: hidden;
         transition: 0.2s;
         &:hover {

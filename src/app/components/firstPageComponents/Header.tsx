@@ -17,7 +17,7 @@ const Header = () => {
     removeCookie("name");
     setTimeout(() => {
       window.location.reload();
-    }, 100);
+    }, 200);
   };
 
   useEffect(() => {

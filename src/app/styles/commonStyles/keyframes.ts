@@ -131,3 +131,13 @@ export const widthHeightZeroTo40 = keyframes`
 from {width: 0; height: 0;}
 to {width: 40px; height: 40px; overflow: visible;}
 `;
+
+export const heightZeroTo200 = keyframes`
+from {height: 0;}
+to {height: 200px;}
+`;
+
+export const height200ToZero = keyframes`
+from {height: 200px;}
+to {height: 0;}
+`;
