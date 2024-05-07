@@ -86,6 +86,7 @@ export const firstPageStyles = {
       css`
         ${isClicked && "transform: scale(1.3);"}
         transition: 0.5s;
+        user-select: none;
       `,
     ];
   },

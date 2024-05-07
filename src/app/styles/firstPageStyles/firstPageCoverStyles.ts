@@ -249,7 +249,7 @@ export const welcomeMessage = css`
   height: 100vh;
   background: black;
   color: linear-gradient(to bottom, black, gray);
-  font-size: 4rem;
+  font-size: 5vh;
   font-weight: bold;
   text-shadow: 0px 20px 15px rgb(40, 40, 40);
   z-index: 1;

@@ -1,6 +1,7 @@
 import { FooterType } from "@/app/types/projectComponentTypes/footer";
 import GitHub from "@/app/assets/svg/github.svg";
 import YouTube from "@/app/assets/svg/youtube.svg";
+import Velog from "@/app/assets/svg/velog.svg";
 import { FirstInfoType } from "@/app/types/projectComponentTypes/firstInfo";
 import { MiddleContentsType } from "@/app/types/middleInfo";
 import image1 from "@/app/assets/projectImages/earthIdeN/image1.png";
@@ -61,8 +62,8 @@ export const earthIdeNInfo: MiddleContentsType[] = [
     description:
       "왼쪽에는 사이드바를 열고 닫을 수 있는 버튼, 페이지 이동을 할 수 있는 버튼을 구현하였습니다. 중앙은 저장과 실행(콘솔)버튼을 구현하였습니다. 그리고 오른쪽에는 초대버튼, 다크/라이트 모든 토글 버튼과 유저 관련 정보 드롭다운 기능을 구현하였습니다.",
     subtitle2: "메인",
-    description2:
-      "사이드바에는 파일/디렉토리 CRUD를 구현했고, 코드 폰트 사이즈 조절버튼과 터미널(콘솔)창, 채팅창을 열고 닫을 수 있는 토글버튼들을 구현하였습니다. 그리고 탭에 아무 파일도 없을 시 코드에디터 커버가 렌더링되고 가운데에 유저를 위한 텍스트이 뜨게 구현하였습니다. 또한 re-resizable 라이브러리를 이용해 각 섹션의 크기를 이용자가 조절 할 수 있게 구현하였습니다.",
+    description2: `사이드바에는 파일/디렉토리 CRUD를 구현했고, 코드 폰트 사이즈 조절버튼과 터미널(콘솔)창, 채팅창을 열고 닫을 수 있는 토글버튼들을 구현하였습니다. 그리고 탭에 아무 파일도 없을 시 코드에디터 커버가 렌더링되고 가운데에 유저를 위한 텍스트이 뜨게 구현하였습니다.
+또한 re-resizable 라이브러리를 이용해 각 섹션의 크기를 이용자가 조절 할 수 있게 구현하였습니다.`,
   },
   {
     image: image7,
@@ -103,6 +104,11 @@ export const earthIdeNFooter: FooterType = {
       href: "https://www.youtube.com/watch?v=UAN7rn7Wkxg&t=2s",
       src: YouTube,
       name: "YouTube",
+    },
+    {
+      href: "https://velog.io/@hiyunseok347/series/Web-IDE-N",
+      src: Velog,
+      name: "Velog",
     },
   ],
 };

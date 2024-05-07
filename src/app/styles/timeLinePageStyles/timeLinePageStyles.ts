@@ -150,7 +150,6 @@ export const timelineStyles = {
         background-color: #4a4a4a;
         overflow: hidden;
         transition: 0.2s;
-        user-select: none;
         &:hover {
           transform: scale(1.2);
           background-color: ${color};
