@@ -18,6 +18,8 @@ import Zac from "@/app/components/timeLinePageComponents/myProjects/Zac";
 import EarthIdeN from "@/app/components/timeLinePageComponents/myProjects/EarthIdeN";
 import Image from "next/image";
 import Arrow from "@/app/assets/svg/arrow.svg";
+import Palette from "@/app/components/timeLinePageComponents/myProjects/Palette";
+import ToDoWithJS from "@/app/components/timeLinePageComponents/myProjects/ToDoWithJS";
 
 const TimeLine = () => {
   const { order, setOrder } = useTimeLineStore();
@@ -43,7 +45,7 @@ const TimeLine = () => {
         {order === 0 ? (
           <Netflix />
         ) : order === 1 ? (
-          <></>
+          <ToDoWithJS />
         ) : order === 2 ? (
           <GithubFinder />
         ) : order === 3 ? (
@@ -59,9 +61,10 @@ const TimeLine = () => {
         ) : order === 8 ? (
           <EarthIdeN />
         ) : (
-          <></>
+          order === 9 && <Palette />
         )}
       </main>
+      <p>{`"시작은 미미하지만 그 끝은 창대하리"`}</p>
       {order !== null && (
         <button
           css={timelinePageStyles.scrollBtn}
