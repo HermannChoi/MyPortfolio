@@ -11,7 +11,7 @@ const TimeLineContents = () => {
   const { order, setOrder } = useTimeLineStore();
 
   return (
-    <div css={[timelineStyles.line]}>
+    <nav css={[timelineStyles.line]}>
       <div css={timelineStyles.progressBar(order)} />
       {projectsInfo.map((project, i) => {
         return (
@@ -31,7 +31,7 @@ const TimeLineContents = () => {
           </button>
         );
       })}
-    </div>
+    </nav>
   );
 };
 

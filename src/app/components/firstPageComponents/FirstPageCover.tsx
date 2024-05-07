@@ -27,7 +27,6 @@ const FirstPageCover = () => {
     }
     setMessage("성공 ✓");
     setIsSubmitted(true);
-    console.log(userName);
     setCookie("name", userName);
     setTimeout(() => {
       setIsFirstLogin(true);
@@ -41,6 +40,7 @@ const FirstPageCover = () => {
         <input
           autoFocus
           type="text"
+          maxLength={5}
           placeholder="이름 입력"
           onChange={(e) => setUserName(e.target.value)}
           value={userName}

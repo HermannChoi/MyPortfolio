@@ -64,10 +64,12 @@ export const turnLeft = keyframes`
   width: 220px;
   height: 220px;
 }
+99%{opacity: 1;}
 100% {
   transform: translate(-50%, -50%) rotate(-540deg);
   width: 190px;
   height: 190px;
+  opacity: 0;
   display: none;
 }
 `;
@@ -81,10 +83,12 @@ export const turnRight = keyframes`
   width: 160px;
   height: 160px;
 }
+99%{opacity: 1;}
 100% {
   transform: translate(-50%, -50%) rotate(540deg);
   width: 130px;
   height: 130px;
+  opacity: 0;
   display: none;
 }
 `;

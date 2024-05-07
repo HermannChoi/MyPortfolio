@@ -25,7 +25,7 @@ const Header = () => {
       router.push("/");
     }
     setUserName(cookies.name);
-  }, [userName]);
+  }, [cookies.name]);
 
   return (
     <>
