@@ -54,7 +54,7 @@ export const firstPageStyles = {
         width: 250px;
         height: 250px;
         border: 1px solid gray;
-        border-radius: 30%;
+        border-radius: ${isClicked ? 50 : 30}%;
         overflow: hidden;
         transition: 0.2s;
         &:hover {
@@ -85,8 +85,9 @@ export const firstPageStyles = {
     return [
       widthHeightFull,
       css`
-        ${isClicked && "transform: scale(1.3);"}
+        transform: scale(${isClicked ? 2 : 1.1});
         transition: 0.5s;
+        object-fit: cover;
         user-select: none;
       `,
     ];

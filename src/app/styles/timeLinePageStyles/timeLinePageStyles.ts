@@ -77,7 +77,7 @@ export const timelinePageStyles = {
         animation: ${fadeIn2} 1s 0.3s forwards,
           ${order === null && //엔진 부하를 줄이기 위해 연산자로 적용
           css`
-            ${floating} 1.3s 1.3s alternate infinite linear
+            ${floating} 1.3s 2s alternate infinite linear
           `};
       `,
     ];

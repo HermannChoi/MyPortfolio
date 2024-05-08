@@ -20,6 +20,7 @@ import Image from "next/image";
 import Arrow from "@/app/assets/svg/arrow.svg";
 import Palette from "@/app/components/timeLinePageComponents/myProjects/Palette";
 import ToDoWithJS from "@/app/components/timeLinePageComponents/myProjects/ToDoWithJS";
+import BudgetCalculator from "@/app/components/timeLinePageComponents/myProjects/BudgetCalculator";
 
 const TimeLine = () => {
   const { order, setOrder } = useTimeLineStore();
@@ -49,7 +50,7 @@ const TimeLine = () => {
         ) : order === 2 ? (
           <GithubFinder />
         ) : order === 3 ? (
-          <></>
+          <BudgetCalculator />
         ) : order === 4 ? (
           <></>
         ) : order === 5 ? (

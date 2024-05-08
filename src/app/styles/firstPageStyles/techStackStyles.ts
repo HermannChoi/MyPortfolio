@@ -40,12 +40,12 @@ export const techStackStyles = {
           content: "";
           position: absolute;
           top: 50%;
-          right: 15px;
+          right: 16px;
           transform: rotate(${isClicked ? -130 : -50}deg);
           transform-origin: top;
           width: 2px;
-          height: 8px;
-          border-radius: 1px;
+          height: 9px;
+          border-radius: 0 0 1px 1px;
           background-color: #ffffff;
           transition: 0.3s;
         }
@@ -57,8 +57,8 @@ export const techStackStyles = {
           transform: rotate(${isClicked ? 130 : 50}deg);
           transform-origin: top;
           width: 2px;
-          height: 8px;
-          border-radius: 1px;
+          height: 9px;
+          border-radius: 0 0 1px 1px;
           background-color: #ffffff;
           transition: 0.3s;
         }

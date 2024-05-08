@@ -14,7 +14,12 @@ const FirstInfo: React.FC<FirstInfo> = ({ info }) => {
   return (
     <div css={[projectSection.outline, delayShowUpAni(0)]}>
       <picture css={projectSection.picture}>
-        <Image src={info.src} alt="자료 사진" css={projectSection.image} />
+        <Image
+          src={info.src}
+          alt="자료 사진"
+          css={projectSection.image}
+          priority={true}
+        />
       </picture>
       <div css={projectSection.articleContainer}>
         <article css={projectSection.article}>

@@ -3,7 +3,7 @@
 
 import { firstPageStyles } from "@/app/styles/firstPageStyles/firstPageStyles";
 import Image from "next/image";
-import Profile from "@/app/assets/profile/IMG_1530.jpg";
+import Profile from "@/app/assets/profile/profile.jpg";
 import { Dispatch, SetStateAction, useState } from "react";
 import { useRouter } from "next/navigation";
 

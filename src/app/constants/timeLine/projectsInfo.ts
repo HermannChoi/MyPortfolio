@@ -7,8 +7,8 @@ export const projectsInfo = [
     date: "23.10. ~ 23.10.",
   },
   {
-    color: "green",
-    name: "CRUD with React",
+    color: "#03bf51",
+    name: "Budget Calculator",
     date: "23.11. ~ 23.11.",
   },
   {
