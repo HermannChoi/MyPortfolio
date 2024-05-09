@@ -2,7 +2,7 @@ import { FooterType } from "@/app/types/projectComponentTypes/footer";
 import GitHub from "@/app/assets/svg/github.svg";
 import YouTube from "@/app/assets/svg/youtube.svg";
 import { FirstInfoType } from "@/app/types/projectComponentTypes/firstInfo";
-import { MiddleContentsType } from "@/app/types/middleInfo";
+import { MiddleContentsType } from "@/app/types/projectComponentTypes/middleInfo";
 import image1 from "@/app/assets/projectImages/cpkNote/image1.png";
 import image2 from "@/app/assets/projectImages/cpkNote/image2.png";
 import image3 from "@/app/assets/projectImages/cpkNote/image3.png";

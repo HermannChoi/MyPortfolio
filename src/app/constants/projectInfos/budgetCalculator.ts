@@ -7,7 +7,7 @@ import image2 from "@/app/assets/projectImages/budgetCalculator/image2.png";
 import image3 from "@/app/assets/projectImages/budgetCalculator/image3.png";
 import image4 from "@/app/assets/projectImages/budgetCalculator/image4.png";
 import image5 from "@/app/assets/projectImages/budgetCalculator/image5.png";
-import { MiddleContentsType } from "@/app/types/middleInfo";
+import { MiddleContentsType } from "@/app/types/projectComponentTypes/middleInfo";
 
 export const budgetCalculatorFirstInfo: FirstInfoType = {
   src: image1,

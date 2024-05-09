@@ -4,7 +4,7 @@ import YouTube from "@/app/assets/svg/youtube.svg";
 import Velog from "@/app/assets/svg/velog.svg";
 import Palette from "@/app/assets/svg/palette.svg";
 import { FirstInfoType } from "@/app/types/projectComponentTypes/firstInfo";
-import { MiddleContentsType } from "@/app/types/middleInfo";
+import { MiddleContentsType } from "@/app/types/projectComponentTypes/middleInfo";
 import image1 from "@/app/assets/projectImages/palette/image1.png";
 import image2 from "@/app/assets/projectImages/palette/image2.png";
 import image3 from "@/app/assets/projectImages/palette/image3.png";

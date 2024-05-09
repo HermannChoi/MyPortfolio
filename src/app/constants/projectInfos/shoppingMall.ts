@@ -7,7 +7,7 @@ import image2 from "@/app/assets/projectImages/shoppingMall/image2.png";
 import image3 from "@/app/assets/projectImages/shoppingMall/image3.png";
 import image4 from "@/app/assets/projectImages/shoppingMall/image4.png";
 import image5 from "@/app/assets/projectImages/shoppingMall/image5.png";
-import { MiddleContentsType } from "@/app/types/middleInfo";
+import { MiddleContentsType } from "@/app/types/projectComponentTypes/middleInfo";
 
 export const shoppingMallFirstInfo: FirstInfoType = {
   src: image1,
@@ -54,7 +54,7 @@ export const shoppingMallInfo: MiddleContentsType[] = [
 
 export const shoppingMallFooter: FooterType = {
   takeaway:
-    "해당 프로젝트에서 처음으로 API의 사용법, JS를 이용한 태그생성과 애니메이션 효과 추가, OOP(Object-Oriented Programming)구현방식 등을 터득하는 시간을 가졌습니다.",
+    "해당 프로젝트로 api를 사용하는 법을 한번 더 공부할 수 있었고, 전역상태 라이브러리 zustand의 사용법을 알 수 있게 되었습니다.",
   links: [
     {
       href: "https://github.com/HermannChoi/GR6",

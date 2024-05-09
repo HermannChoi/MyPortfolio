@@ -3,7 +3,7 @@ import GitHub from "@/app/assets/svg/github.svg";
 import YouTube from "@/app/assets/svg/youtube.svg";
 import { FirstInfoType } from "@/app/types/projectComponentTypes/firstInfo";
 import FirstImage from "@/app/assets/projectImages/todaysLuck/image3.png";
-import { MiddleContentsType } from "@/app/types/middleInfo";
+import { MiddleContentsType } from "@/app/types/projectComponentTypes/middleInfo";
 import TL2 from "@/app/assets/projectImages/todaysLuck/image2.png";
 import TL3 from "@/app/assets/projectImages/todaysLuck/image4.png";
 import TL4 from "@/app/assets/projectImages/todaysLuck/image5.png";

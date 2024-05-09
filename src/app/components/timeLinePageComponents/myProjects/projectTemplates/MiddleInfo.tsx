@@ -3,7 +3,7 @@
 
 import { delayShowUpAni } from "@/app/styles/commonStyles/commonStyles";
 import { projectSection } from "@/app/styles/timeLinePageStyles/projectSectionStyles";
-import { MiddleInfoType } from "@/app/types/middleInfo";
+import { MiddleInfoType } from "@/app/types/projectComponentTypes/middleInfo";
 import Image from "next/image";
 
 const MiddleInfo: React.FC<MiddleInfoType> = ({ info }) => {

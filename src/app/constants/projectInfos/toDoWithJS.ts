@@ -4,7 +4,7 @@ import { FirstInfoType } from "@/app/types/projectComponentTypes/firstInfo";
 import { FooterType } from "@/app/types/projectComponentTypes/footer";
 import image2 from "@/app/assets/projectImages/toDoWithJS/image2.png";
 import image3 from "@/app/assets/projectImages/toDoWithJS/image3.png";
-import { MiddleContentsType } from "@/app/types/middleInfo";
+import { MiddleContentsType } from "@/app/types/projectComponentTypes/middleInfo";
 
 export const toDoWithJSFirstInfo: FirstInfoType = {
   src: image1,

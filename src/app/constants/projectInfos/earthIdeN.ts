@@ -3,7 +3,7 @@ import GitHub from "@/app/assets/svg/github.svg";
 import YouTube from "@/app/assets/svg/youtube.svg";
 import Velog from "@/app/assets/svg/velog.svg";
 import { FirstInfoType } from "@/app/types/projectComponentTypes/firstInfo";
-import { MiddleContentsType } from "@/app/types/middleInfo";
+import { MiddleContentsType } from "@/app/types/projectComponentTypes/middleInfo";
 import image1 from "@/app/assets/projectImages/earthIdeN/image1.png";
 import image2 from "@/app/assets/projectImages/earthIdeN/image2.png";
 import image3 from "@/app/assets/projectImages/earthIdeN/image3.png";

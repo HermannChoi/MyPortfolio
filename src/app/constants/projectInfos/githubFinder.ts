@@ -6,7 +6,7 @@ import image1 from "@/app/assets/projectImages/githubFinder/image1.png";
 import image2 from "@/app/assets/projectImages/githubFinder/image2.png";
 import image3 from "@/app/assets/projectImages/githubFinder/image3.png";
 import image4 from "@/app/assets/projectImages/githubFinder/image4.png";
-import { MiddleContentsType } from "@/app/types/middleInfo";
+import { MiddleContentsType } from "@/app/types/projectComponentTypes/middleInfo";
 
 export const githubFirstInfo: FirstInfoType = {
   src: image1,
