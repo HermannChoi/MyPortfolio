@@ -21,6 +21,7 @@ import Arrow from "@/app/assets/svg/arrow.svg";
 import Palette from "@/app/components/timeLinePageComponents/myProjects/Palette";
 import ToDoWithJS from "@/app/components/timeLinePageComponents/myProjects/ToDoWithJS";
 import BudgetCalculator from "@/app/components/timeLinePageComponents/myProjects/BudgetCalculator";
+import ShoppingMall from "@/app/components/timeLinePageComponents/myProjects/ShoppingMall";
 
 const TimeLine = () => {
   const { order, setOrder } = useTimeLineStore();
@@ -52,7 +53,7 @@ const TimeLine = () => {
         ) : order === 3 ? (
           <BudgetCalculator />
         ) : order === 4 ? (
-          <></>
+          <ShoppingMall />
         ) : order === 5 ? (
           <TodaysLuck />
         ) : order === 6 ? (
