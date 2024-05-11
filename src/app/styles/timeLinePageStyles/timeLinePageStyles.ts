@@ -108,18 +108,18 @@ export const timelineStyles = {
       opacity: 0;
       animation: ${widthZeroToFull} 0.5s 0.6s linear forwards;
 
-      @media (max-width: 1000px) {
-        min-width: 1000px;
+      @media (max-width: 1300px) {
+        min-width: 1260px;
       }
     `,
   ],
-  progressBar: (order: number | null) => {
+  progressBar: (order: number | null, length: number) => {
     return [
       css`
         position: absolute;
         top: 0;
         left: 0;
-        width: ${order !== null && order * 10 * 0.91 + 9}%;
+        width: ${order !== null && (order + 1) * 10 * (10 / (length + 1))}%;
         height: 100%;
         background-color: lime;
         transition: 0.5s;

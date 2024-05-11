@@ -12,7 +12,7 @@ const TimeLineContents = () => {
 
   return (
     <nav css={[timelineStyles.line]}>
-      <div css={timelineStyles.progressBar(order)} />
+      <div css={timelineStyles.progressBar(order, projectsInfo.length)} />
       {projectsInfo.map((project, i) => {
         return (
           <button

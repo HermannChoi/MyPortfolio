@@ -29,4 +29,5 @@ export const projectsInfo = [
     date: "24.01. ~ 24.02.",
   },
   { color: "#f27301", name: "Palette*", date: "24.03. ~ 24.04." },
+  { color: "#000000", name: "My Portfolio", date: "24.04. ~ 24.05." },
 ];
