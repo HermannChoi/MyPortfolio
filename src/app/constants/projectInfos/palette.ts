@@ -18,10 +18,12 @@ import image10 from "@/app/assets/projectImages/palette/image10.png";
 import image11 from "@/app/assets/projectImages/palette/image11.png";
 import image12 from "@/app/assets/projectImages/palette/image12.png";
 import image13 from "@/app/assets/projectImages/palette/image13.png";
+import image14 from "@/app/assets/projectImages/palette/image14.png";
+import image15 from "@/app/assets/projectImages/palette/image15.png";
 
 export const paletteFirstInfo: FirstInfoType = {
   src: image1,
-  title: "Palette*",
+  title: "Palette* (deployed, server alive)",
   subtitle: "포트폴리오, 이력서 생성 및 채용 서비스",
   period: "2024.03.04 ~ 2024.04.22 (49일)",
   personnel: "6명 (Front-End 3명, Back-End 3명)",
@@ -150,6 +152,20 @@ API 통신을 할 때 문제가 발생했는데 http 관련 문제였다. 헤더
 또한 카카오톡을 통한 링크 접속임으로 휴대폰 사이즈에 맞는 반응형 스타일링을 통하여 깨지지 않고 작성이 되게 구현하였습니다.
 
 3. 버튼 여러번 클릭으로 요청을 2번 이상 보낼 우려가 있으므로 위에서 구현한 로딩중일 때도 버튼을 disabled시켜 안전성을 높였습니다.
+`,
+  },
+  {
+    image: image14,
+    title: "워크 스페이스",
+    description: `리액트 쿼리의 useQuery를 사용하여 이용자의 이력서 및 프로젝트 정보를 불러오고, 이를 사진과 같이 렌더링되게 구현하였습니다.
+width가 줄어들 때 스타일링이 깨지는 것을 방지하기 위해, 텍스트는 width 초과 시 ...으로 보이게 구현하고, 프로젝트는 격자 패턴이기에 grid로 스타일링 해 주었습니다.
+`,
+  },
+  {
+    image: image15,
+    title: "마이 페이지",
+    description: `리액트 쿼리의 useQuery를 사용하여 이용자의 개인정보를 불러와서 개인정보 수정 인풋 칸들에 각 맞는 정보를 미리 넣게 구현하였습니다.
+닉네임 포지션 및 기술스택 등 개인정보를 수정할 수 있게 구현하였습니다.
 `,
   },
 ];

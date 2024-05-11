@@ -64,7 +64,7 @@ export const timelinePageStyles = {
   title: [
     css`
       text-align: center;
-      animation: ${fadeIn2} 1s;
+      // animation: ${fadeIn2} 1s; //성능 최적화를 위해 사용 안함.
     `,
   ],
   guide: (order: null | number) => {
@@ -74,11 +74,7 @@ export const timelinePageStyles = {
         font-weight: 500;
         opacity: 0;
         transition: 0.5s;
-        animation: ${fadeIn2} 1s 0.3s forwards,
-          ${order === null && //엔진 부하를 줄이기 위해 연산자로 적용
-          css`
-            ${floating} 1.3s 2s alternate infinite linear
-          `};
+        animation: ${fadeIn2} 1s 0.3s forwards;
       `,
     ];
   },
