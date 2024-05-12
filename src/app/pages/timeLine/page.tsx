@@ -22,6 +22,7 @@ import Palette from "@/app/components/timeLinePageComponents/myProjects/Palette"
 import ToDoWithJS from "@/app/components/timeLinePageComponents/myProjects/ToDoWithJS";
 import BudgetCalculator from "@/app/components/timeLinePageComponents/myProjects/BudgetCalculator";
 import ShoppingMall from "@/app/components/timeLinePageComponents/myProjects/ShoppingMall";
+import MyPortfolio from "@/app/components/timeLinePageComponents/myProjects/MyPortfolio";
 
 const TimeLine = () => {
   const { order, setOrder } = useTimeLineStore();
@@ -62,8 +63,10 @@ const TimeLine = () => {
           <Zac />
         ) : order === 8 ? (
           <EarthIdeN />
+        ) : order === 9 ? (
+          <Palette />
         ) : (
-          order === 9 && <Palette />
+          order === 10 && <MyPortfolio />
         )}
       </main>
       <p>{`"시작은 미미하지만 그 끝은 창대하리"`}</p>
