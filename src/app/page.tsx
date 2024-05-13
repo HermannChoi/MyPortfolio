@@ -13,6 +13,7 @@ import { useCookies } from "react-cookie";
 import BlackPage from "./components/firstPageComponents/BlackPage";
 import Header from "./components/firstPageComponents/Header";
 import TechStackSpace from "./components/firstPageComponents/TechStackSpace";
+import ContactMe from "./components/firstPageComponents/ContactMe";
 
 export default function Home() {
   const [cookies] = useCookies(["name"]);
@@ -36,9 +37,11 @@ export default function Home() {
       {blackPage && <BlackPage />}
       {!isFirstLogin && <FirstPageCover />}
       <Header />
+      <h1>FrontEnd Developer</h1>
       <TypeItSpace />
       <ProfileSpace setIsProfileClicked={setIsProfileClicked} />
       <BlogSpace />
+      <ContactMe />
       <TechStackSpace />
     </div>
   );

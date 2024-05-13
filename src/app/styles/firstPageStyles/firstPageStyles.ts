@@ -16,7 +16,8 @@ export const firstPageStyles = {
       flexColumnCenterX2,
       css`
         row-gap: 25px;
-        padding-top: 12%;
+        min-height: 100vh;
+        padding-top: 50px;
         background: linear-gradient(0deg, black, #292929);
         transition: 0.5s;
         ${isProfileClicked && `transform: translateY(-120vh)`}

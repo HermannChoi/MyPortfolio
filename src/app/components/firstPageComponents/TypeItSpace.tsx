@@ -23,7 +23,7 @@ const TypeItSpace = () => {
           .delete(5)
           .pause(500)
           .type("광합성 많은 새싹 개발자, 최윤석입니다.")
-          .pause(400);
+          .pause(3000);
 
         return instance;
       }}
