@@ -5,7 +5,10 @@
 import TimeLineContents from "@/app/components/timeLinePageComponents/TimeLineBar";
 import { timelinePageStyles } from "@/app/styles/timeLinePageStyles/timeLinePageStyles";
 import { useTimeLineStore } from "@/app/stores/timeLinePageStores/useTimeLineStore";
-import { widthHeightFull } from "@/app/styles/commonStyles/commonStyles";
+import {
+  delayShowUpAni,
+  widthHeightFull,
+} from "@/app/styles/commonStyles/commonStyles";
 import { useEffect } from "react";
 import Netflix from "@/app/components/timeLinePageComponents/myProjects/Netflix";
 import TodaysLuck from "@/app/components/timeLinePageComponents/myProjects/TodaysLuck";
@@ -23,6 +26,8 @@ import ToDoWithJS from "@/app/components/timeLinePageComponents/myProjects/ToDoW
 import BudgetCalculator from "@/app/components/timeLinePageComponents/myProjects/BudgetCalculator";
 import ShoppingMall from "@/app/components/timeLinePageComponents/myProjects/ShoppingMall";
 import MyPortfolio from "@/app/components/timeLinePageComponents/myProjects/MyPortfolio";
+import { css } from "@emotion/react";
+import { fadeIn2 } from "@/app/styles/commonStyles/keyframes";
 
 const TimeLine = () => {
   const { order, setOrder } = useTimeLineStore();
@@ -69,7 +74,7 @@ const TimeLine = () => {
           order === 10 && <MyPortfolio />
         )}
       </main>
-      <p>{`"시작은 미미하지만 그 끝은 창대하리"`}</p>
+      <p css={delayShowUpAni(0.9)}>{`"시작은 미미하지만 그 끝은 창대하리"`}</p>
       {order !== null && (
         <button
           css={timelinePageStyles.scrollBtn}
