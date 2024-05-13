@@ -32,9 +32,10 @@ export const paletteFirstInfo: FirstInfoType = {
   language: "TypeScript, HTML, Emotion, Java",
   framework: "Next.js, Spring Boot",
   stateLibrary: "Zustand, React-query",
+  cicd: "Github Actions",
   server: "Tomcat, AWS EC2, NGINX",
   db: "MySQL, Redis(RDS)",
-  etc: "Slack, GitHub, Git Actions, Docker, Vercel",
+  etc: "Slack, GitHub, Docker, Vercel",
 };
 
 export const paletteInfo: MiddleContentsType[] = [

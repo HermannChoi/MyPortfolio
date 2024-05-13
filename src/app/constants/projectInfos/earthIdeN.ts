@@ -22,7 +22,7 @@ export const earthIdeNFirstInfo: FirstInfoType = {
   personnel: "6명 (Front-End 2명, Back-End 4명)",
   responsibility:
     "Front-End (UI/UX 디자인, 홈페이지, 로그인/회원가입/정보수정, 파일트리/파일탭/코드에디터/터미널)",
-  language: "TypeScript, HTML, SCSS(module)",
+  language: "TypeScript, HTML, SCSS(module), Java",
   framework: "React, vite, Spring Boot",
   stateLibrary: "Zustand, React-query",
   server: "Tomcat, AWS EC2, NGINX",

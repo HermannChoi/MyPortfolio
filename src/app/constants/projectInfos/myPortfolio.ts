@@ -1,6 +1,5 @@
 import { FooterType } from "@/app/types/projectComponentTypes/footer";
 import GitHub from "@/app/assets/svg/github.svg";
-import YouTube from "@/app/assets/svg/youtube.svg";
 import Velog from "@/app/assets/svg/velog.svg";
 import { FirstInfoType } from "@/app/types/projectComponentTypes/firstInfo";
 import { MiddleContentsType } from "@/app/types/projectComponentTypes/middleInfo";
@@ -11,8 +10,6 @@ import image4 from "@/app/assets/projectImages/myPortfolio/image4.png";
 import image5 from "@/app/assets/projectImages/myPortfolio/image5.png";
 import image6 from "@/app/assets/projectImages/myPortfolio/image6.png";
 import image7 from "@/app/assets/projectImages/myPortfolio/image7.png";
-import image8 from "@/app/assets/projectImages/myPortfolio/image8.png";
-import image9 from "@/app/assets/projectImages/myPortfolio/image9.png";
 
 export const myPortfolioFirstInfo: FirstInfoType = {
   src: image1,
@@ -22,10 +19,11 @@ export const myPortfolioFirstInfo: FirstInfoType = {
   personnel: "개인 프로젝트",
   language: "TypeScript, HTML, Emotion",
   framework: "Next.js",
-  stateLibrary: "-",
-  etc: "GitHub, GitHub Actions, Vercel",
+  stateLibrary: "Zustand",
+  cicd: "GitHub Actions",
+  etc: "GitHub, Vercel",
   description:
-    "저만의 포트폴리오 사이트로 모바일 웹으로도 깨지지 않고 잘 보일 수 있게 구현하였습니다.",
+    "저만의 포트폴리오 사이트로 모바일 웹으로도 깨지지 않고 잘 보일 수 있게 구현하고 GitHub Actions로 CI/CD를 사용하여 개발 라이프사이클을 간소화 및 가속화하였습니다.",
 };
 
 export const myPortfolioInfo: MiddleContentsType[] = [
@@ -69,8 +67,8 @@ export const myPortfolioInfo: MiddleContentsType[] = [
     image: image7,
     title: "프로젝트 기록 페이지",
     subtitle: "UI/UX",
-    description: `처음 페이지가 렌더링될 때 원을 클릭하라는 가이드메세지가 중간에 뜨고 원 클릭 시 사라져서 깔끔하게 보이게 하고, 타임라인 바의 position을 sticky로 둬서 스크롤링을 해도 헤더에 계속 위치하게 구현하였습니다.
-또한 페이지 최하단에 최상단으로 가는 버튼을 구현하여 UX를 높였습니다.`,
+    description: `1. 처음 페이지가 렌더링될 때 원을 클릭하라는 가이드메세지가 중간에 뜨고 원 클릭 시 사라져서 깔끔하게 보이게 하고, 타임라인 바의 position을 sticky로 둬서 스크롤링을 해도 헤더에 계속 위치하게 구현하였습니다.
+2. 또한 페이지 최하단에 최상단으로 가는 버튼 구현과 타임라인 버튼들을 클릭 시 프로젝트 시작위치로 이동하게 구현하여 UX를 높였습니다.`,
     subtitle2: "코드 최적화",
     description2: `프로젝트 기록의 구역을 처음, 중간, 하단으로 나눠 컴포넌트화를 함으로써 모든 프로젝트의 기록을 같은 컴포넌트로 사용하고 props만 갈아끼면 되게 구현하여 코드의 상당 양을 줄였습니다.`,
   },
