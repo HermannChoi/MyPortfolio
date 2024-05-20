@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Portfolio
 
-## Getting Started
+나를 소개하는 포트폴리오 사이트
 
-First, run the development server:
+## 🙇 프로젝트 소개
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+저의 기술스택과 여태까지 진행한 프로젝트를 소개하는 포트폴리오 사이트입니다.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⏱️ 개발 기간
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 2024.05.02 ~ 2024.05.14+ (13+일)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 👨 구성 인원
 
-## Learn More
+- 개인 프로젝트
 
-To learn more about Next.js, take a look at the following resources:
+## ⚙️ 기술 스택
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js
+- TypeScript
+- Emotion
+- Zustand
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 📍 주요 기능
 
-## Deploy on Vercel
+#### 1️⃣ 입장 시 이름 입력이 필요하며 입력 후 애니메이션 동작 후 메인페이지를 볼 수 있습니다.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<img src="src/app/assets/projectImages/myPortfolio/image5.png" />
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### 2️⃣ 메인 페이지에서 저의 깃헙, 노션, 벨로그 주소로 링크이동할 수 있고, 이메일(Contact Me) 주소 및 기술 스택을 볼 수 있게 구현하였습니다. 사진 클릭 시 프로젝트 기록들이 있는 주소로 이동됩니다.
+
+<img src="src/app/assets/projectImages/myPortfolio/image1.png" />
+
+#### 3️⃣ 메인 페이지에서 사진 클릭 시 프로젝트 타임라인 페이지로 라우팅되며 여기서 타임라인 버튼들을 눌러 제가 만든 프로젝트들의 설명을 볼 수 있게 구현하였습니다.
+
+<img src="src/app/assets/projectImages/myPortfolio/image7.png" />
