@@ -22,7 +22,7 @@ export const firstPageCoverStyle = (isSubmiited: boolean) => {
     widthHeightFull,
     flexCenterX2,
     css`
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       animation: ${isSubmiited && fadeOut} 2s 5.5s forwards;
