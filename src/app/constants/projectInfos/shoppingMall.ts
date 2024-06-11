@@ -1,5 +1,4 @@
 import Github from "@/app/assets/svg/github.svg";
-import Notion from "@/app/assets/svg/notionW.svg";
 import { FirstInfoType } from "@/app/types/projectComponentTypes/firstInfo";
 import { FooterType } from "@/app/types/projectComponentTypes/footer";
 import image1 from "@/app/assets/projectImages/shoppingMall/image1.png";
@@ -15,10 +14,9 @@ export const shoppingMallFirstInfo: FirstInfoType = {
   subtitle: "fake api와 firebase를 이용한 쇼핑몰 사이트 구현",
   period: "2023.10.27 ~ 2023.10.31 (5일)",
   personnel: "개인 프로젝트",
-  language: "HTML, CSS, JavaScript",
-  framework: "React",
-  stateLibrary: "Zustand",
-  etc: "-",
+  language: ["HTML", "CSS", "JavaScript"],
+  framework: ["React"],
+  stateLibrary: ["Zustand"],
   description:
     "구름톤 여섯번째 과제로 fake api와 firebase를 이용하여 쇼핑몰 사이트를 구현하였습니다.",
 };

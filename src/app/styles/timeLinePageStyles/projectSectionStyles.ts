@@ -49,6 +49,19 @@ export const projectSection = {
       overflow-y: scroll;
     `,
   ],
+  stackSpace: [
+    css`
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+    `,
+  ],
+  eachStackLine: [
+    css`
+      display: flex;
+      gap: 3px;
+    `,
+  ],
   lastContainer: [
     css`
       display: flex;

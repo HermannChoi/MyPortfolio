@@ -17,11 +17,11 @@ export const myPortfolioFirstInfo: FirstInfoType = {
   subtitle: "나의 개발을 보여주는 서비스",
   period: "2024.05.02 ~ 2024.05.12 (11일)",
   personnel: "개인 프로젝트",
-  language: "TypeScript, HTML, Emotion",
-  framework: "Next.js",
-  stateLibrary: "Zustand",
-  cicd: "GitHub Actions",
-  etc: "GitHub, Vercel",
+  language: ["TypeScript", "HTML", "Emotion"],
+  framework: ["Next.js"],
+  stateLibrary: ["Zustand"],
+  cicd: ["GitHub Actions"],
+  etc: ["GitHub", "Vercel"],
   description:
     "저만의 포트폴리오 사이트로 모바일 웹으로도 깨지지 않고 잘 보일 수 있게 구현하고 GitHub Actions로 CI/CD를 사용하여 개발 라이프사이클을 간소화 및 가속화하였습니다.",
 };

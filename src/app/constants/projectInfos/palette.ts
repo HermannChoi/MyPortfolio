@@ -29,13 +29,13 @@ export const paletteFirstInfo: FirstInfoType = {
   personnel: "6명 (Front-End 3명, Back-End 3명)",
   responsibility: `Front-End
     :UI/UX Design, 로그인/회원가입/정보수정, 프로젝트 기록 CRUD, 이력서 CRU, 평판 CR,및 이에 관한 모든 페이지들, 검색, 홈페이지, 워크스페이스, 마이페이지`,
-  language: "TypeScript, HTML, Emotion, Java",
-  framework: "Next.js, Spring Boot",
-  stateLibrary: "Zustand, React-query",
-  cicd: "Github Actions",
-  server: "Tomcat, AWS EC2, NGINX",
-  db: "MySQL, Redis(RDS)",
-  etc: "Slack, GitHub, Docker, Vercel",
+  language: ["TypeScript", "HTML", "Emotion", "Java"],
+  framework: ["Next.js", "Spring Boot"],
+  stateLibrary: ["Zustand", "React-query"],
+  cicd: ["Github Actions"],
+  server: ["Tomcat", "AWS EC2", "NGINX"],
+  db: ["MySQL", "Redis(RDS)"],
+  etc: ["Slack", "GitHub", "Docker", "Vercel"],
 };
 
 export const paletteInfo: MiddleContentsType[] = [

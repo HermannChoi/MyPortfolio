@@ -1,9 +1,14 @@
 "use client";
 /** @jsxImportSource @emotion/react */
 
-import { delayShowUpAni } from "@/app/styles/commonStyles/commonStyles";
+import {
+  delayShowUpAni,
+  flexColumnCenter,
+} from "@/app/styles/commonStyles/commonStyles";
+import { techStackStyles } from "@/app/styles/firstPageStyles/techStackStyles";
 import { projectSection } from "@/app/styles/timeLinePageStyles/projectSectionStyles";
 import { FirstInfoType } from "@/app/types/projectComponentTypes/firstInfo";
+import { css } from "@emotion/react";
 import Image from "next/image";
 
 interface FirstInfo {
@@ -32,32 +37,92 @@ const FirstInfo: React.FC<FirstInfo> = ({ info }) => {
             {info.responsibility && `담당 역할 : ${info.responsibility}`}
           </p>
 
-          <p>
+          <div css={projectSection.stackSpace}>
             <span css={[`font-size: 1.1em; font-weight: 500;`]}>개발 환경</span>
             <br />
-            언어 : {info.language} <br />
-            프레임워크 : {info.framework} <br />
-            상태 라이브러리 : {info.stateLibrary} <br />
+            <div css={projectSection.eachStackLine}>
+              <span>언어 :</span>
+              {info.language.map((lang, i) => {
+                return (
+                  <div key={i} css={techStackStyles.content}>
+                    {lang}
+                  </div>
+                );
+              })}
+            </div>
+            {info.framework && (
+              <div css={projectSection.eachStackLine}>
+                <span>프레임워크 :</span>
+                {info.framework.map((fw, i) => {
+                  return (
+                    <div key={i} css={techStackStyles.content}>
+                      {fw}
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+            {info.stateLibrary && (
+              <div css={projectSection.eachStackLine}>
+                <span>상태 라이브러리 :</span>
+                {info.stateLibrary.map((sl, i) => {
+                  return (
+                    <div key={i} css={techStackStyles.content}>
+                      {sl}
+                    </div>
+                  );
+                })}
+              </div>
+            )}
             {info.cicd && (
-              <>
-                CI/CD : {info.cicd}
-                <br />
-              </>
+              <div css={projectSection.eachStackLine}>
+                <span>CI/CD :</span>
+                {info.cicd.map((cicd, i) => {
+                  return (
+                    <div key={i} css={techStackStyles.content}>
+                      {cicd}
+                    </div>
+                  );
+                })}
+              </div>
             )}
             {info.server && (
-              <>
-                서버 : {info.server}
-                <br />
-              </>
+              <div css={projectSection.eachStackLine}>
+                <span>서버 :</span>
+                {info.server.map((server, i) => {
+                  return (
+                    <div key={i} css={techStackStyles.content}>
+                      {server}
+                    </div>
+                  );
+                })}
+              </div>
             )}
             {info.db && (
-              <>
-                DB : {info.db}
-                <br />
-              </>
+              <div css={projectSection.eachStackLine}>
+                <span>DB :</span>
+                {info.db.map((db, i) => {
+                  return (
+                    <div key={i} css={techStackStyles.content}>
+                      {db}
+                    </div>
+                  );
+                })}
+              </div>
             )}
-            ETC : {info.etc}
-          </p>
+            {info.etc && (
+              <div css={projectSection.eachStackLine}>
+                <span>ETC :</span>
+                {info.etc.map((etc, i) => {
+                  return (
+                    <div key={i} css={techStackStyles.content}>
+                      {etc}
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
           <p>{info.description}</p>
         </article>
       </div>

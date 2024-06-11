@@ -16,10 +16,9 @@ export const zacFirstInfo: FirstInfoType = {
   personnel: "4명 (Front-End 2명, Back-End 2명)",
   responsibility:
     "Front-End (전체적인 UI/UX Design, api통신, 다크/라이트 모드)",
-  language: "JavaScript, HTML, CSS",
-  framework: "React",
-  stateLibrary: "-",
-  etc: "Slack, GitHub",
+  language: ["JavaScript", "HTML", "CSS"],
+  framework: ["React"],
+  etc: ["Slack", "GitHub"],
 };
 
 export const zacInfo: MiddleContentsType[] = [

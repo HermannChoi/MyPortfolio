@@ -12,10 +12,7 @@ export const toDoWithJSFirstInfo: FirstInfoType = {
   subtitle: "HTML/CSS/JS를 이용해 todo 리스트 구현하기",
   period: "2023.10.24 ~ 2023.10.26 (3일)",
   personnel: "개인 프로젝트",
-  language: "HTML, CSS, JavaScript",
-  framework: "-",
-  stateLibrary: "-",
-  etc: "-",
+  language: ["HTML", "CSS", "JavaScript"],
   description:
     "구름톤 두번째 과제로 HTML/CSS, JS를 이용해 todo리스트를 구현해 보았습니다.",
 };

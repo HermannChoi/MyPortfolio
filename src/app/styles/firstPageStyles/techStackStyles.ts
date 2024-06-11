@@ -1,5 +1,9 @@
 import { css } from "@emotion/react";
-import { commonColors, flexColumnCenter } from "../commonStyles/commonStyles";
+import {
+  commonColors,
+  flexCenterX2,
+  flexColumnCenter,
+} from "../commonStyles/commonStyles";
 import { height200ToZero, heightZeroTo200 } from "../commonStyles/keyframes";
 
 export const techStackStyles = {
@@ -107,7 +111,9 @@ export const techStackStyles = {
     `,
   ],
   content: [
+    flexCenterX2,
     css`
+      width: fit-content;
       padding: 0px 7px;
       border: 1px solid ${commonColors.representative};
       border-radius: 5px;

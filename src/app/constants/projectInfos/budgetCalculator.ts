@@ -15,10 +15,8 @@ export const budgetCalculatorFirstInfo: FirstInfoType = {
   subtitle: "React를 이용한 예산 계산기(CRUD) 구현하기",
   period: "2023.11.13 ~ 2023.11.15 (3일)",
   personnel: "개인 프로젝트",
-  language: "HTML, CSS, JavaScript",
-  framework: "React",
-  stateLibrary: "-",
-  etc: "-",
+  language: ["HTML", "CSS", "JavaScript"],
+  framework: ["React"],
   description:
     "구름톤 다섯번째 과제로 React를 이용하여 예산 계산을 할 수 있는 기능(CRUD)을 구현하였습니다.",
 };

@@ -12,10 +12,7 @@ export const netflixFirstInfo: FirstInfoType = {
   subtitle: "HTML/CSS를 이용해 Netflix화면 구현하기",
   period: "2023.10.18 ~ 2023.10.20 (3일)",
   personnel: "개인 프로젝트",
-  language: "HTML, CSS",
-  framework: "-",
-  stateLibrary: "-",
-  etc: "-",
+  language: ["HTML", "CSS"],
   description:
     "구름톤 첫번째 과제로 HTML과 CSS만을 이용해 넷플릭스 첫화면을 구현해 보았습니다.",
 };

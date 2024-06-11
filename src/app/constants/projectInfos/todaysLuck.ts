@@ -16,10 +16,10 @@ export const todaysLuckFirstInfo: FirstInfoType = {
   personnel: "3명 (Front-End 2명, Back-End 1명)",
   responsibility:
     "Front-End (UI/UX Design 및 전체적인 페이지 구성, 애니메이션)",
-  language: "TypeScript, HTML, CSS(module)",
-  framework: "React",
-  stateLibrary: "Zustand",
-  etc: "Figma, Slack, GitHub",
+  language: ["TypeScript", "HTML", "CSS(module)"],
+  framework: ["React"],
+  stateLibrary: ["Zustand"],
+  etc: ["Figma", "Slack", "GitHub"],
 };
 
 export const todaysLuckInfo: MiddleContentsType[] = [

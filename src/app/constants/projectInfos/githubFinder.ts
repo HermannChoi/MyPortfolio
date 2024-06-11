@@ -14,10 +14,7 @@ export const githubFirstInfo: FirstInfoType = {
   subtitle: "GitHub API를 이용해 유저 검색하기",
   period: "2023.10.27 ~ 2023.10.31 (5일)",
   personnel: "개인 프로젝트",
-  language: "HTML, CSS, JavaScript",
-  framework: "-",
-  stateLibrary: "-",
-  etc: "-",
+  language: ["HTML", "CSS", " JavaScript"],
   description:
     "구름톤 세번째 과제로 GitHub API를 이용해서 유저의 정보들을 불러오는 기능을 구현한 사이트를 만들었습니다.",
 };

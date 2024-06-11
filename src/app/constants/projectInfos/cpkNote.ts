@@ -16,10 +16,10 @@ export const cpkNoteFirstInfo: FirstInfoType = {
   personnel: "3명 (Front-End 3명)",
   responsibility:
     "Front-End (UI/UX 구현, 사이드바, 메인 바디, 라벨 CRUD, 메모 RUD)",
-  language: "TypeScript, HTML, SCSS(module)",
-  framework: "Next.js",
-  stateLibrary: "Redux",
-  etc: "Slack, GitHub",
+  language: ["TypeScript", "HTML", "SCSS(module)"],
+  framework: ["Next.js"],
+  stateLibrary: ["Redux"],
+  etc: ["Slack", "GitHub"],
 };
 
 export const cpkNoteInfo: MiddleContentsType[] = [
