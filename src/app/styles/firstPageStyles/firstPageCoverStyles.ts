@@ -51,7 +51,7 @@ export const formStyles = {
         border-radius: 20px;
         background-color: black;
         color: white;
-        font-weight: bold;
+        font-weight: 500;
         box-shadow: 0 0 0 100vw black;
         overflow: hidden;
         z-index: 100;

@@ -18,12 +18,9 @@ const TypeItSpace = () => {
         instance
           .type(`안녕하세요! `)
           .pause(600)
-          .type(`스펀지같은`)
-          .pause(500)
-          .delete(5)
-          .pause(500)
-          .type("광합성 많은 새싹 개발자, 최윤석입니다.")
-          .pause(3000);
+          .type("디테일 바라기 개발자, 최윤석입니다.")
+          .pause(3000)
+          .delete();
 
         return instance;
       }}

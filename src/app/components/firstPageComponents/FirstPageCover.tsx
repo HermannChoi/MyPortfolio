@@ -14,7 +14,7 @@ import { useCookies } from "react-cookie";
 const FirstPageCover = () => {
   const [, setCookie] = useCookies(["name"]);
 
-  const [message, setMessage] = useState("입장 조건");
+  const [message, setMessage] = useState("당신의 이름을 입력해주세요.");
   const [userName, setUserName] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -23,7 +23,7 @@ const FirstPageCover = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (userName === "") {
-      return setMessage("이름을 입력해주세요");
+      return setMessage("이름을 입력해주세요!");
     }
     setMessage("성공 ✓");
     setIsSubmitted(true);
