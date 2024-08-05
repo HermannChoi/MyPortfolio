@@ -40,24 +40,6 @@ export const paletteFirstInfo: FirstInfoType = {
 
 export const paletteInfo: MiddleContentsType[] = [
   {
-    image: image2,
-    title: "반응형",
-    description: `홈페이지 및 다른 페이지들을 모두 브라우저 너비에 따라 깨지지 않게 media-query를 사용 혹은 사용하지 않고 flex를 이용하여 반응형으로 디자인하였습니다.`,
-  },
-  {
-    image: image3,
-    title: "로딩",
-    subtitle: "로딩 페이지, 로딩 스피너",
-    description: `1.UI/UX 및 페이지 최적화를 위해 api가 통신중(리액트쿼리의 isPending 상태)일 때 로딩페이지를 프리렌더링 하게 구현하였습니다.
-2. 위와 같은 목적으로 로그인/회원가입, 프로젝트, 평판 등 api 통신중일 때 버튼에 로딩 스피너를 삼항연산자로 집어넣어서 구현하였습니다.`,
-  },
-  {
-    image: image4,
-    title: "홈페이지 : 헤더",
-    description: `1. 삼항 연산자를 사용해서 로그인 전 상황에는 메뉴바에 구독, 채팅과 오른쪽에는 로그인, 회원가입이 렌더링 되고, 로그인 후에는 워크스페이스, 평판, 채팅 및 마이페이지, 로그아웃이 렌더링되게 구현하였습니다.
-2. 서비스를 구독중인 기업회원에겐 pro와 구독중이라는 상태로 렌더링되게 구현하였습니다.`,
-  },
-  {
     image: image5,
     title: "홈페이지 : 검색",
     description: `리액트 쿼리 useMutation으로 API통신을 해서 원하는 기술스택과 포지션을 필터링하는 방식으로 검색을 구현하였습니다.

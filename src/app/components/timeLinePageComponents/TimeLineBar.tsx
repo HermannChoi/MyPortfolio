@@ -42,6 +42,7 @@ const TimeLineContents = () => {
                     border: 1px solid #ffff00;
                     border-radius: 3px;
                     background-color: #ffff0030;
+                    pointer-events: none;
                   `,
                 ]}
               >
