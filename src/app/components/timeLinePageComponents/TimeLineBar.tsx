@@ -6,6 +6,7 @@ import { useTimeLineStore } from "@/app/stores/timeLinePageStores/useTimeLineSto
 import { projectsInfo } from "@/app/constants/timeLine/projectsInfo";
 import { delayShowUpAni2 } from "@/app/styles/commonStyles/commonStyles";
 import { scrollToTop } from "@/app/utils/scrollToTop";
+import { css } from "@emotion/react";
 
 const TimeLineContents = () => {
   const { order, setOrder } = useTimeLineStore();
@@ -28,6 +29,25 @@ const TimeLineContents = () => {
             ]}
           >
             {i === order ? "✓" : i + 1}
+            {(i === 8 || i === 9 || i === 10) && (
+              <p
+                css={[
+                  css`
+                    position: absolute;
+                    top: -30px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 100%;
+                    line-height: 20px;
+                    border: 1px solid #ffff00;
+                    border-radius: 3px;
+                    background-color: #ffff0030;
+                  `,
+                ]}
+              >
+                추천
+              </p>
+            )}
           </button>
         );
       })}

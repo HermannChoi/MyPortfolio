@@ -19,8 +19,8 @@ export const timelinePageStyles = {
         position: sticky;
         top: 0px;
         width: 100%;
-        height: 150px;
-        padding-top: 40px;
+        height: 160px;
+        padding-top: 60px;
         background-color: #00000090;
         overflow-x: auto;
         z-index: 100;
