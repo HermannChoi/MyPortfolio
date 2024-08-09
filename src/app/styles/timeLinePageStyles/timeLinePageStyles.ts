@@ -14,20 +14,30 @@ import {
 
 export const timelinePageStyles = {
   header: [
+    css`
+      position: sticky;
+      top: 0px;
+      width: 100%;
+      height: 160px;
+      padding-top: 60px;
+      background-color: #00000090;
+      overflow-x: auto;
+      z-index: 100;
+    `,
+  ],
+  main: [
     [
+      widthHeightFull,
       css`
-        position: sticky;
-        top: 0px;
-        width: 100%;
-        height: 160px;
-        padding-top: 60px;
-        background-color: #00000090;
-        overflow-x: auto;
-        z-index: 100;
+        padding: 0 10vw;
+
+        @media (max-width: 700px) {
+          padding: 0;
+        }
       `,
     ],
   ],
-  main: (order: null | number) => {
+  whole: (order: null | number) => {
     return [
       flexColumnCenter,
       widthHeightFull,

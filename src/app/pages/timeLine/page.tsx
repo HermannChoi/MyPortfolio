@@ -35,7 +35,7 @@ const TimeLine = () => {
   }, []);
 
   return (
-    <div css={[timelinePageStyles.main(order)]}>
+    <div css={[timelinePageStyles.whole(order)]}>
       <Link href={"/"} css={timelinePageStyles.backBtn}>
         <Image src={Arrow} alt="arrow" priority={true} />
       </Link>
@@ -47,7 +47,7 @@ const TimeLine = () => {
       <header css={timelinePageStyles.header}>
         <TimeLineContents />
       </header>
-      <main css={widthHeightFull}>
+      <main css={[timelinePageStyles.main]}>
         {order === 0 ? (
           <Netflix />
         ) : order === 1 ? (
