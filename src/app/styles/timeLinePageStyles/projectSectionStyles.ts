@@ -12,7 +12,7 @@ export const projectSection = {
 
       @media (max-width: 1260px) {
         flex-direction: column;
-        pading: 5px;
+        padding: 0;
       }
     `,
   ],
