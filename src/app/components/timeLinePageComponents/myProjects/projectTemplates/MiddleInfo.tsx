@@ -35,6 +35,7 @@ const MiddleInfo: React.FC<MiddleInfoType> = ({ info }) => {
                 </pre>
               </article>
             </div>
+            <hr css={[`margin-bottom: 20px; border-color: #454545`]} />
           </div>
         );
       })}
