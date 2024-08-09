@@ -115,8 +115,8 @@ export const techStackStyles = {
     css`
       width: fit-content;
       padding: 0px 7px;
-      border: 1px solid ${commonColors.representative};
-      border-radius: 5px;
+      border-radius: 100px;
+      background-color: ${commonColors.representative}60;
       font-size: 0.8em;
     `,
   ],
