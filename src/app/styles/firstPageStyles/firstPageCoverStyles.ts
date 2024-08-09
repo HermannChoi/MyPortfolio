@@ -104,7 +104,7 @@ export const wallStyles = {
         width: 50vw;
         height: 100vh;
         border-right: 10px solid #a8ffe6;
-        background-color: #02040a;
+        background-color: #1c1c1c;
         box-shadow: inset -3px 0px 15px black;
         animation: ${isSubmiited && xToMinus50vw} 2s 3.5s forwards;
       `,
@@ -120,7 +120,7 @@ export const wallStyles = {
         width: 50vw;
         height: 100vh;
         border-left: 10px solid #cefff1;
-        background-color: #02040a;
+        background-color: #1c1c1c;
         box-shadow: inset 3px 0px 15px black;
         animation: ${isSubmiited && xTo50vw} 2s 3.5s forwards;
       `,
