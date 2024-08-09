@@ -26,8 +26,6 @@ import ToDoWithJS from "@/app/components/timeLinePageComponents/myProjects/ToDoW
 import BudgetCalculator from "@/app/components/timeLinePageComponents/myProjects/BudgetCalculator";
 import ShoppingMall from "@/app/components/timeLinePageComponents/myProjects/ShoppingMall";
 import MyPortfolio from "@/app/components/timeLinePageComponents/myProjects/MyPortfolio";
-import { css } from "@emotion/react";
-import { fadeIn2 } from "@/app/styles/commonStyles/keyframes";
 
 const TimeLine = () => {
   const { order, setOrder } = useTimeLineStore();
@@ -41,7 +39,7 @@ const TimeLine = () => {
       <Link href={"/"} css={timelinePageStyles.backBtn}>
         <Image src={Arrow} alt="arrow" priority={true} />
       </Link>
-      <Header />
+      {/* <Header /> */}
       <h1 css={timelinePageStyles.title}>Time Line of My Projects</h1>
       <p css={[timelinePageStyles.guide(order)]}>
         원들을 클릭하여 프로젝트를 보세요!

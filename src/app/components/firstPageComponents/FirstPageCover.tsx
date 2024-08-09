@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 /** @jsxImportSource @emotion/react */
 
@@ -8,34 +9,40 @@ import {
   welcomeMessage,
 } from "@/app/styles/firstPageStyles/firstPageCoverStyles";
 import { useFirstPageCoverStore } from "@/app/stores/firstPageCoverStores/useFirstPageCoverStore";
-import { useState } from "react";
-import { useCookies } from "react-cookie";
+import { useEffect, useState } from "react";
+// import { useCookies } from "react-cookie";
 
 const FirstPageCover = () => {
-  const [, setCookie] = useCookies(["name"]);
+  // const [, setCookie] = useCookies(["name"]);
 
-  const [message, setMessage] = useState("당신의 이름을 입력해주세요.");
-  const [userName, setUserName] = useState("");
+  // const [message, setMessage] = useState("당신의 이름을 입력해주세요.");
+  // const [userName, setUserName] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const { setIsFirstLogin } = useFirstPageCoverStore();
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    if (userName === "") {
-      return setMessage("이름을 입력해주세요!");
-    }
-    setMessage("성공 ✓");
+  // const handleSubmit = () => {
+  //   if (userName === "") {
+  //     return setMessage("이름을 입력해주세요!");
+  //   }
+  //   setMessage("성공 ✓");
+  //   setIsSubmitted(true);
+  //   setCookie("name", userName);
+  //   setTimeout(() => {
+  //     setIsFirstLogin(true);
+  //   }, 7500);
+  // };
+
+  useEffect(() => {
     setIsSubmitted(true);
-    setCookie("name", userName);
     setTimeout(() => {
       setIsFirstLogin(true);
     }, 7500);
-  };
+  }, []);
 
   return (
     <div css={[firstPageCoverStyle(isSubmitted)]}>
-      <form onSubmit={handleSubmit} css={[formStyles.form(isSubmitted)]}>
+      {/* <form onSubmit={handleSubmit} css={[formStyles.form(isSubmitted)]}>
         <p css={[formStyles.text(message)]}>{message}</p>
         <input
           autoFocus
@@ -46,7 +53,7 @@ const FirstPageCover = () => {
           value={userName}
           css={[formStyles.input]}
         />
-      </form>
+      </form> */}
       <div css={wallStyles.wall}>
         <div css={[wallStyles.outerCircleOutline(isSubmitted)]}></div>
         <div css={[wallStyles.leftOuterCircle(isSubmitted)]}></div>
@@ -57,7 +64,10 @@ const FirstPageCover = () => {
         <div css={[wallStyles.leftWall(isSubmitted)]}></div>
         <div css={[wallStyles.rightWall(isSubmitted)]}></div>
       </div>
-      <div css={[welcomeMessage]}>{userName}님 환영합니다.</div>
+      <div css={[welcomeMessage]}>
+        {/* {userName}님  */}
+        환영합니다.
+      </div>
     </div>
   );
 };

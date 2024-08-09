@@ -36,7 +36,7 @@ export default function Home() {
     <div css={firstPageStyles.page(isProfileClicked)}>
       {blackPage && <BlackPage />}
       {!isFirstLogin && <FirstPageCover />}
-      <Header />
+      {/* <Header /> */}
       <h1>FrontEnd Developer</h1>
       <TypeItSpace />
       <ProfileSpace setIsProfileClicked={setIsProfileClicked} />
