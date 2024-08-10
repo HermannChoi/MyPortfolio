@@ -13,6 +13,7 @@ export const projectSection = {
       @media (max-width: 1260px) {
         flex-direction: column;
         padding: 0;
+        padding-bottom: 20px;
       }
     `,
   ],

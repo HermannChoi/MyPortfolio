@@ -58,7 +58,7 @@ export const timelinePageStyles = {
     css`
       position: absolute;
       top: 20px;
-      left: 20px;
+      left: 10px;
       width: 50px;
       height: 30px;
       border: none;
@@ -98,7 +98,7 @@ export const timelinePageStyles = {
   },
   title: [
     css`
-      padding-top: 30px;
+      padding-top: 50px;
       text-align: center;
       // animation: ${fadeIn2} 1s; //성능 최적화를 위해 사용 안함.
     `,
@@ -118,6 +118,7 @@ export const timelinePageStyles = {
     css`
       width: 100%;
       height: 30px;
+      margin-bottom: 20px;
       background-color: transparent;
       border: 1px solid gray;
       border-radius: 15px;
