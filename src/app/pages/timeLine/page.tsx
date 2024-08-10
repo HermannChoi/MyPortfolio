@@ -9,7 +9,7 @@ import {
   delayShowUpAni,
   widthHeightFull,
 } from "@/app/styles/commonStyles/commonStyles";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Netflix from "@/app/components/timeLinePageComponents/myProjects/Netflix";
 import TodaysLuck from "@/app/components/timeLinePageComponents/myProjects/TodaysLuck";
 import { scrollToTop } from "@/app/utils/scrollToTop";
@@ -30,6 +30,19 @@ import MyPortfolio from "@/app/components/timeLinePageComponents/myProjects/MyPo
 const TimeLine = () => {
   const { order, setOrder } = useTimeLineStore();
 
+  const [scrollProgress, setScrollProgress] = useState<number>(0);
+
+  useEffect(() => {
+    const updateProgress = (): void => {
+      const currentScrollPosition = window.scrollY;
+      const scrollHeight = document.body.scrollHeight - window.innerHeight + 25;
+      let progress =
+        Number((currentScrollPosition / scrollHeight).toFixed(2)) * 100;
+      setScrollProgress(progress);
+    };
+    window.addEventListener("scroll", updateProgress);
+  }, []);
+
   useEffect(() => {
     setOrder(null);
   }, []);
@@ -40,6 +53,11 @@ const TimeLine = () => {
         <Image src={Arrow} alt="arrow" priority={true} />
       </Link>
       {/* <Header /> */}
+      {order !== null && (
+        <div css={timelinePageStyles.progress_container}>
+          <div css={timelinePageStyles.progress_bar(scrollProgress)}></div>
+        </div>
+      )}
       <h1 css={timelinePageStyles.title}>Time Line of My Projects</h1>
       <p css={[timelinePageStyles.guide(order)]}>
         원들을 클릭하여 프로젝트를 보세요!

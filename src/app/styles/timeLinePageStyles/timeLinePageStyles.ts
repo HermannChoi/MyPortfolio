@@ -8,7 +8,6 @@ import {
 import {
   fadeIn2,
   fadeInForProjName,
-  floating,
   widthZeroToFull,
 } from "../commonStyles/keyframes";
 
@@ -32,7 +31,7 @@ export const timelinePageStyles = {
         padding: 0 10vw;
 
         @media (max-width: 700px) {
-          padding: 0;
+          padding: 0 10px;
         }
       `,
     ],
@@ -44,12 +43,12 @@ export const timelinePageStyles = {
       css`
         row-gap: ${order === null ? "100px" : "20px"};
         min-width: 360px;
-        padding: 50px;
+        // padding: 50px;
         transition: row-gap 1s;
 
         @media (max-width: 1260px) {
-          padding: 20px;
-          padding-top: 70px;
+          // padding: 20px;
+          // padding-top: 70px;
         }
       `,
     ];
@@ -58,7 +57,7 @@ export const timelinePageStyles = {
     flexCenterX2,
     css`
       position: absolute;
-      top: 10px;
+      top: 20px;
       left: 20px;
       width: 50px;
       height: 30px;
@@ -71,8 +70,35 @@ export const timelinePageStyles = {
       }
     `,
   ],
+  progress_container: [
+    css`
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      border-radius: 5px;
+      background-color: gray;
+      overflow: hidden;
+      z-index: 101;
+    `,
+  ],
+  progress_bar: (progress: number) => {
+    return [
+      css`
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: ${progress}%;
+        height: 100%;
+        background-color: ${commonColors.representative};
+        transition: 0.1s;
+      `,
+    ];
+  },
   title: [
     css`
+      padding-top: 30px;
       text-align: center;
       // animation: ${fadeIn2} 1s; //성능 최적화를 위해 사용 안함.
     `,
