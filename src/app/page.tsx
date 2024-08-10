@@ -41,8 +41,8 @@ export default function Home() {
       <TypeItSpace />
       <ProfileSpace setIsProfileClicked={setIsProfileClicked} />
       <BlogSpace />
-      <ContactMe />
       <TechStackSpace />
+      <ContactMe />
     </div>
   );
 }

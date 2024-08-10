@@ -17,7 +17,7 @@ export const firstPageStyles = {
       css`
         row-gap: 25px;
         min-height: 100vh;
-        padding-top: 50px;
+        // padding-top: 50px;
         background: linear-gradient(0deg, black, #292929);
         transition: 0.5s;
         ${isProfileClicked && `transform: translateY(-120vh)`}
@@ -52,10 +52,10 @@ export const firstPageStyles = {
     return [
       css`
         position: relative;
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
         border: 1px solid gray;
-        border-radius: ${isClicked ? 50 : 30}%;
+        border-radius: ${isClicked ? 50 : 10}%;
         overflow: hidden;
         transition: 0.2s;
         &:hover {
@@ -86,7 +86,7 @@ export const firstPageStyles = {
     return [
       widthHeightFull,
       css`
-        transform: scale(${isClicked ? 2 : 1.1});
+        transform: scale(${isClicked ? 2 : 1});
         transition: 0.5s;
         object-fit: cover;
         user-select: none;

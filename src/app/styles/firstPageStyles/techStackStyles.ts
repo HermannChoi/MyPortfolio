@@ -77,7 +77,7 @@ export const techStackStyles = {
         width: 300px;
         height: 0px;
         border-radius: 10px;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
         background-color: ${commonColors.representative}40;
         overflow-y: auto;
         animation: ${isClicked ? heightZeroTo200 : height200ToZero} 0.4s
